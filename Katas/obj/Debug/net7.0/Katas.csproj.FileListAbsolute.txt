@@ -1,0 +1,15 @@
+C:\Users\thoma\Coding\Katas\Katas\bin\Debug\net7.0\Katas.exe
+C:\Users\thoma\Coding\Katas\Katas\bin\Debug\net7.0\Katas.deps.json
+C:\Users\thoma\Coding\Katas\Katas\bin\Debug\net7.0\Katas.runtimeconfig.json
+C:\Users\thoma\Coding\Katas\Katas\bin\Debug\net7.0\Katas.dll
+C:\Users\thoma\Coding\Katas\Katas\bin\Debug\net7.0\Katas.pdb
+C:\Users\thoma\Coding\Katas\Katas\obj\Debug\net7.0\Katas.csproj.AssemblyReference.cache
+C:\Users\thoma\Coding\Katas\Katas\obj\Debug\net7.0\Katas.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\thoma\Coding\Katas\Katas\obj\Debug\net7.0\Katas.AssemblyInfoInputs.cache
+C:\Users\thoma\Coding\Katas\Katas\obj\Debug\net7.0\Katas.AssemblyInfo.cs
+C:\Users\thoma\Coding\Katas\Katas\obj\Debug\net7.0\Katas.csproj.CoreCompileInputs.cache
+C:\Users\thoma\Coding\Katas\Katas\obj\Debug\net7.0\Katas.dll
+C:\Users\thoma\Coding\Katas\Katas\obj\Debug\net7.0\refint\Katas.dll
+C:\Users\thoma\Coding\Katas\Katas\obj\Debug\net7.0\Katas.pdb
+C:\Users\thoma\Coding\Katas\Katas\obj\Debug\net7.0\Katas.genruntimeconfig.cache
+C:\Users\thoma\Coding\Katas\Katas\obj\Debug\net7.0\ref\Katas.dll
