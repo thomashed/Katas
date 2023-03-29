@@ -57,4 +57,35 @@ public class KatasOne
         return output.ToArray();
     }
     
+    public static bool Alphanumeric(string str)
+    {
+        return !string.IsNullOrEmpty(str) && str.All(char.IsLetterOrDigit);
+    }
+    
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
