@@ -1,3 +1,5 @@
+using Katas.ExtensionMethods;
+
 namespace Katas;
 
 public class KatasOne
@@ -62,13 +64,7 @@ public class KatasOne
         return !string.IsNullOrEmpty(str) && str.All(char.IsLetterOrDigit);
     }
  
-    public static int getLoopSize(LinkedList<int> startNode){
-        //Enter code here.
-        
-        
-        
-        throw new NotImplementedException();
-    }
+    
     
     
     
