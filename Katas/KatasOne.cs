@@ -69,4 +69,21 @@ public class KatasOne
         
         throw new NotImplementedException();
     }
+    
+    public static IEnumerable<int> GetIntegersFromList(List<object> listOfItems)
+    {
+        List<int> intsFromList = new List<int>();
+        foreach (var item in listOfItems)
+        {
+            try
+            {
+                intsFromList.Add(Int32.Parse(item.ToString()));
+            }
+            catch (Exception)
+            {
+            }
+        }
+
+        return intsFromList;
+    }
 }
