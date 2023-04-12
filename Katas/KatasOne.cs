@@ -72,18 +72,12 @@ public class KatasOne
     
     public static IEnumerable<int> GetIntegersFromList(List<object> listOfItems)
     {
-        List<int> intsFromList = new List<int>();
         foreach (var item in listOfItems)
         {
-            try
+            if (item is int)
             {
-                intsFromList.Add(Int32.Parse(item.ToString()));
-            }
-            catch (Exception)
-            {
+                yield return (int)item;
             }
         }
-
-        return intsFromList;
     }
 }
