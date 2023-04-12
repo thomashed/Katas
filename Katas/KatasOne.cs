@@ -72,12 +72,6 @@ public class KatasOne
     
     public static IEnumerable<int> GetIntegersFromList(List<object> listOfItems)
     {
-        foreach (var item in listOfItems)
-        {
-            if (item is int)
-            {
-                yield return (int)item;
-            }
-        }
+        return listOfItems.OfType<int>();
     }
 }
