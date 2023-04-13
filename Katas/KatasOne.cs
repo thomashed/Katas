@@ -74,4 +74,13 @@ public class KatasOne
     {
         return listOfItems.OfType<int>();
     }
+    
+    public static int DuplicateCount(string str)
+    {
+        var extractedDuplicates = str.ToLowerInvariant()
+            .GroupBy(c => c)
+            .Where(g => g.Count() > 1);
+        return extractedDuplicates.Count();
+    }
+    
 }
