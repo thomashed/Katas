@@ -83,4 +83,10 @@ public class KatasOne
         return extractedDuplicates.Count();
     }
     
+    public static long RowSumOddNumbers(long n)
+    {
+        return (long)Math.Pow(n, 3);
+    }
+       
+    
 }
