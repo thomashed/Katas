@@ -87,6 +87,11 @@ public class KatasOne
     {
         return (long)Math.Pow(n, 3);
     }
+    
+    public static int binaryArrayToNumber(int[] BinaryArray)
+    {
+        throw new NotImplementedException();
+    }
        
     
 }
