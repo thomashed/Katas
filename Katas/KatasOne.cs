@@ -99,17 +99,17 @@ public class KatasOne
     public static int BinaryArrayToNumber(int[] binaryArray)
     {
         var flippedBinary = binaryArray.Reverse().ToArray();
-        var binaryIndexer = new int[]{1,2,4,8,16,32,64,128};
-        var binarySum = 0;
+        var binaryMapper = new int[]{1,2,4,8,16,32,64,128};
+        var sum = 0;
         for (int i = 0; i < flippedBinary.Length; i++)
         {
             if (flippedBinary[i] == 1)
             {
-                binarySum += binaryIndexer[i];
+                sum += binaryMapper[i];
             }
         }
 
-        return binarySum;
+        return sum;
     }
        
     
