@@ -96,9 +96,20 @@ public class KatasOne
     // Testing: [0, 1, 1, 0] ==> 6
     // Testing: [1, 1, 1, 1] ==> 15
     // Testing: [1, 0, 1, 1] ==> 11
-    public static int binaryArrayToNumber(int[] BinaryArray)
+    public static int BinaryArrayToNumber(int[] binaryArray)
     {
-        throw new NotImplementedException();
+        var flippedBinary = binaryArray.Reverse().ToArray();
+        var binaryIndexer = new int[]{1,2,4,8,16,32,64,128};
+        var binarySum = 0;
+        for (int i = 0; i < flippedBinary.Length; i++)
+        {
+            if (flippedBinary[i] == 1)
+            {
+                binarySum += binaryIndexer[i];
+            }
+        }
+
+        return binarySum;
     }
        
     
