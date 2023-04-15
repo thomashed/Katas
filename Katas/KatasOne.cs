@@ -1,3 +1,4 @@
+using System.Collections;
 using Katas.ExtensionMethods;
 
 namespace Katas;
@@ -98,18 +99,7 @@ public class KatasOne
     // Testing: [1, 0, 1, 1] ==> 11
     public static int BinaryArrayToNumber(int[] binaryArray)
     {
-        var flippedBinary = binaryArray.Reverse().ToArray();
-        var binaryMapper = new int[]{1,2,4,8,16,32,64,128};
-        var sum = 0;
-        for (int i = 0; i < flippedBinary.Length; i++)
-        {
-            if (flippedBinary[i] == 1)
-            {
-                sum += binaryMapper[i];
-            }
-        }
-
-        return sum;
+        return Convert.ToInt32(string.Join("", binaryArray), 2);
     }
        
     
