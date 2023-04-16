@@ -101,6 +101,16 @@ public class KatasOne
     {
         return Convert.ToInt32(string.Join("", binaryArray), 2);
     }
+    
+    // input = ["red", "green", "red", "blue", "blue"]
+    // result = 2 (1 red pair + 1 blue pair)
+    public static int NumberOfPairs(string[] gloves)
+    {
+
+
+
+        throw new NotImplementedException();
+    }
        
     
 }
