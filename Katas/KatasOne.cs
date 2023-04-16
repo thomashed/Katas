@@ -106,10 +106,16 @@ public class KatasOne
     // result = 2 (1 red pair + 1 blue pair)
     public static int NumberOfPairs(string[] gloves)
     {
+        var groupedInPairs = gloves.GroupBy(s => s);
+        var dic = groupedInPairs.ToDictionary(key => key.Key, value => value.Count());
+        var amountOfPairs = 0;
 
-
-
-        throw new NotImplementedException();
+        foreach (KeyValuePair<string,int> gloveType in dic)
+        {
+            amountOfPairs += gloveType.Value / 2;
+        }
+        
+        return amountOfPairs;
     }
        
     
