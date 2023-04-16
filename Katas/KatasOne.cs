@@ -117,6 +117,20 @@ public class KatasOne
         
         return amountOfPairs;
     }
+    
+    public static int NumberOfPairs2(string[] gloves)
+    {
+        var numOfPairs = 0;
+        var groupedGloves = gloves
+            .GroupBy(gloveType => gloveType);
+
+        foreach (var pair in groupedGloves)
+        {
+            numOfPairs += (pair.Count() / 2);
+        }
+        
+        return numOfPairs;
+    }
        
     
 }
