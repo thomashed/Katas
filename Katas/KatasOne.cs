@@ -101,35 +101,23 @@ public class KatasOne
     {
         return Convert.ToInt32(string.Join("", binaryArray), 2);
     }
-    
-    // input = ["red", "green", "red", "blue", "blue"]
-    // result = 2 (1 red pair + 1 blue pair)
-    public static int NumberOfPairs(string[] gloves)
-    {
-        var groupedInPairs = gloves.GroupBy(s => s);
-        var dic = groupedInPairs.ToDictionary(key => key.Key, value => value.Count());
-        var amountOfPairs = 0;
 
-        foreach (KeyValuePair<string,int> gloveType in dic)
-        {
-            amountOfPairs += gloveType.Value / 2;
-        }
-        
-        return amountOfPairs;
-    }
-    
-    public static int NumberOfPairs2(string[] gloves)
+    public static int NumberOfPairs1(string[] gloves)
     {
         var numOfPairs = 0;
         var groupedGloves = gloves
             .GroupBy(gloveType => gloveType);
 
-        foreach (var pair in groupedGloves)
+        foreach (var gloveGroup in groupedGloves)
         {
-            numOfPairs += (pair.Count() / 2);
+            numOfPairs += (gloveGroup.Count() / 2);
         }
         
         return numOfPairs;
+    }
+    public static int NumberOfPairs2(string[] gloves)
+    {
+        return gloves.GroupBy(s => s).Select(grouping => grouping.Count() / 2).Sum();
     }
        
     
