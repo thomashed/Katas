@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Globalization;
 using Katas.ExtensionMethods;
 
 namespace Katas;
@@ -122,9 +123,15 @@ public class KatasOne
     
     public static string AbbrevName(string name)
     {
-
-        throw new NotImplementedException();
+        var newName = "";
+        // Console.WriteLine("testing:" + newName.ToString());
+        foreach (var letter in name.Split(" ").Select(s => s[0]))
+        {
+            newName += letter + ".";
+        }
+        
+        return newName.Remove(newName.Count() -1 );
     }
        
-    
+        
 }
