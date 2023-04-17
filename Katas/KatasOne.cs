@@ -123,10 +123,8 @@ public class KatasOne
         return gloves.GroupBy(s => s).Select(grouping => grouping.Count() / 2).Sum();
     }
     
-    public static string AbbrevName(string name)
-    {
-        return string.Join('.', name.Split(' ').Select(s => s[0])).ToUpper();
-    }
+    public static string AbbrevName(string name) => string.Join('.', name.Split(' ').Select(s => s[0])).ToUpper();
+    
 
         
 }
