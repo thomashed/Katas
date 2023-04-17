@@ -2,6 +2,7 @@ using System.Collections;
 using System.Globalization;
 using System.Runtime.InteropServices;
 using Katas.ExtensionMethods;
+using Microsoft.VisualBasic;
 
 namespace Katas;
 
@@ -124,13 +125,8 @@ public class KatasOne
     
     public static string AbbrevName(string name)
     {
-        var initials = "";
-        initials = name.Split(" ")
-           .Select(s => s[0])
-           .Aggregate(initials, (current, letter) => current + (letter + "."));
-
-       return initials.Trim().Remove(initials.Length - 1).ToUpper();
+        return string.Join('.', name.Split(' ').Select(s => s[0])).ToUpper();
     }
-       
+
         
 }
