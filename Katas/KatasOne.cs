@@ -124,12 +124,14 @@ public class KatasOne
     public static string AbbrevName(string name)
     {
         var newName = "";
-        // Console.WriteLine("testing:" + newName.ToString());
+        
+        // newName = name.Split(" ").Select(s => s[0]).Aggregate(newName, (current, letter) => current + (letter + "."));
+
         foreach (var letter in name.Split(" ").Select(s => s[0]))
         {
             newName += letter + ".";
         }
-        
+
         return newName.Remove(newName.Count() -1 );
     }
        
