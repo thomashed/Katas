@@ -119,6 +119,12 @@ public class KatasOne
     {
         return gloves.GroupBy(s => s).Select(grouping => grouping.Count() / 2).Sum();
     }
+    
+    public static string AbbrevName(string name)
+    {
+
+        throw new NotImplementedException();
+    }
        
     
 }
