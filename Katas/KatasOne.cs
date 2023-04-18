@@ -128,7 +128,7 @@ public class KatasOne
     
     public static string boolToWord(bool word)
     {
-        throw new NotImplementedException();
+        return word ? "Yes" : "No";
     }
 
         
