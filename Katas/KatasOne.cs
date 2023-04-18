@@ -126,6 +126,10 @@ public class KatasOne
     public static string AbbrevName(string name) => 
         string.Join('.', name.Split(' ').Select(s => s[0])).ToUpper();
     
+    public static string boolToWord(bool word)
+    {
+        throw new NotImplementedException();
+    }
 
         
 }
