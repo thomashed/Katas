@@ -131,26 +131,7 @@ public class KatasOne
         return word ? "Yes" : "No";
     }
 
-    public static int SumTwoSmallestNumbers(int[] numbers)
-    {
-        var lowest1 = numbers[0];
-        var lowest2 = numbers[1];
-
-        foreach (var number in numbers)
-        {
-            if (number < lowest1)
-            {
-                lowest1 = number;
-            }
-
-            if (number < lowest2 && number != lowest1)
-            {
-                lowest2 = number;
-            }
-        }
-
-        return lowest1 + lowest2;
-    }
+    public static int SumTwoSmallestNumbers(int[] numbers) => numbers.OrderBy(i => i).Take(2).Sum();
     
-        
+    
 }
