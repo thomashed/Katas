@@ -133,9 +133,7 @@ public class KatasOne
 
     public static int SumTwoSmallestNumbers(int[] numbers) => numbers.OrderBy(i => i).Take(2).Sum();
 
-    public static int Multiply(int x)
-    {
-        return (x % 2) == 0 ? x * 8 : x * 9;
-    }
+    public static int Multiply(int x) => (x % 2) == 0 ? x * 8 : x * 9;
+    
     
 }
