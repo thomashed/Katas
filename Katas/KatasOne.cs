@@ -132,6 +132,5 @@ public class KatasOne
     }
 
     public static int SumTwoSmallestNumbers(int[] numbers) => numbers.OrderBy(i => i).Take(2).Sum();
-    
-    
+
 }
