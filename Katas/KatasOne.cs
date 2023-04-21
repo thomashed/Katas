@@ -137,23 +137,9 @@ public class KatasOne
     
     public static int GetAverage(int[] marks) => (int)marks.Average();
     
-    public static double Chain(double input, Func<double,double>[] fs)
-    {
-        var sum = input;
-        foreach (var method in fs)
-        {
-            sum = method(sum);
-        }
-        
-        return sum;
-    }
-    
-    public static double add(double x) {
-        return x + 1;
-    }
+    public static double Chain(double input, Func<double,double>[] fs) => 
+        fs.Aggregate(input, (chainedInput, method) => method(chainedInput));
+   
 
-    public static double mul(double x) {
-        return x * 30;
-    }
     
 }
