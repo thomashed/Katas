@@ -135,5 +135,6 @@ public class KatasOne
 
     public static int Multiply(int x) => (x % 2) == 0 ? x * 8 : x * 9;
     
+    public static int GetAverage(int[] marks) => (int)marks.Average();
     
 }
