@@ -140,6 +140,9 @@ public class KatasOne
     public static double Chain(double input, Func<double,double>[] fs) => 
         fs.Aggregate(input, (chainedInput, method) => method(chainedInput));
    
-
+    public static int BetweenExtremes(int[] numbers)
+    {
+        throw new NotImplementedException();
+    }
     
 }
