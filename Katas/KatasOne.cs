@@ -142,8 +142,7 @@ public class KatasOne
    
     public static int BetweenExtremes(int[] numbers)
     {
-        var orderedNums = numbers.OrderBy(i => i);
-        return orderedNums.Last() - orderedNums.First();
+        return numbers.Max() - numbers.Min();
     }
     
 }
