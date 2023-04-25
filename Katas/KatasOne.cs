@@ -142,7 +142,23 @@ public class KatasOne
    
     public static int BetweenExtremes(int[] numbers)
     {
-        throw new NotImplementedException();
+        var lowest = numbers[0];
+        var highest = numbers[1];
+
+        foreach (var number in numbers)
+        {
+            if (number < lowest)
+            {
+                lowest = number;
+            }else if (number > highest)
+            {
+                highest = number;
+            }
+        }
+        
+        // orderBy
+
+        return highest - lowest;
     }
     
 }
