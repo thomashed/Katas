@@ -145,4 +145,10 @@ public class KatasOne
         return numbers.Max() - numbers.Min();
     }
     
+    public static int SumNoDuplicates(int[] arr)
+    {
+        
+        throw new NotImplementedException();
+    }
+    
 }
