@@ -147,8 +147,7 @@ public class KatasOne
     
     public static int SumNoDuplicates(int[] arr)
     {
-        
-        throw new NotImplementedException();
+        return arr.Sum(i => arr.Count(j => i == j) == 1 ? i : 0);
     }
     
 }
