@@ -131,8 +131,6 @@ public class KatasOne
         return word ? "Yes" : "No";
     }
 
-    public static int SumTwoSmallestNumbers(int[] numbers) => numbers.OrderBy(i => i).Take(2).Sum();
-
     public static int Multiply(int x) => (x % 2) == 0 ? x * 8 : x * 9;
     
     public static int GetAverage(int[] marks) => (int)marks.Average();
@@ -149,5 +147,8 @@ public class KatasOne
     {
         return arr.Sum(i => arr.Count(j => i == j) == 1 ? i : 0);
     }
+    
+    public static int SumTwoSmallestNumbers(int[] numbers) => numbers.Order().Take(2).Sum();
+    
     
 }
