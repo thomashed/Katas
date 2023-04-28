@@ -150,5 +150,9 @@ public class KatasOne
     
     public static int SumTwoSmallestNumbers(int[] numbers) => numbers.Order().Take(2).Sum();
     
+    public static int Enough(int cap, int on, int wait)
+    {
+        throw new NotImplementedException();
+    }
     
 }
