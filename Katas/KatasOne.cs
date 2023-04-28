@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Globalization;
+using System.Net.NetworkInformation;
 using System.Runtime.InteropServices;
 using Katas.ExtensionMethods;
 using Microsoft.VisualBasic;
@@ -150,9 +151,9 @@ public class KatasOne
     
     public static int SumTwoSmallestNumbers(int[] numbers) => numbers.Order().Take(2).Sum();
     
-    public static int Enough(int cap, int on, int wait)
-    {
-        throw new NotImplementedException();
-    }
+    // cap = 10, on = 5, wait = 5 --> 0 # He can fit all 5 passengers
+    // cap = 100, on = 60, wait = 50 --> 10 # He can't fit 10 of the 50 waiting
+    public static int Enough(int cap, int on, int wait) => (cap - on >= wait) ? 0 : wait - (cap - on);
+    
     
 }
