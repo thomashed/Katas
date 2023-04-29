@@ -155,7 +155,7 @@ public class KatasOne
     
     public static string ReplaceVowels(string s)
     {
-        var vowels = "AEIOUYWaeiouyw";
+        var vowels = "AEIOUaeiou";
         return new string(s.Select(c => vowels.Contains(c) ? '!' : c).ToArray());
     }
     
