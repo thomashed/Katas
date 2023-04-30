@@ -158,5 +158,13 @@ public class KatasOne
         var vowels = "AEIOUaeiou";
         return new string(s.Select(c => vowels.Contains(c) ? '!' : c).ToArray());
     }
+
+    public static int СenturyFromYear(int year)
+    {
+        var yearAsString = year.ToString();
+        var century = int.Parse(new string(yearAsString.Take(2).ToArray()));
+
+        return Int32.Parse(yearAsString[^1].ToString()) > 0 ? century + 1 : century;
+    }
     
 }
