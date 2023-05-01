@@ -161,4 +161,10 @@ public class KatasOne
 
     public static int СenturyFromYear(int year) => (year - 1) / 100 + 1;
     
+    public bool Survivor(double n)
+    {
+
+        throw new NotImplementedException();
+    }
+    
 }
