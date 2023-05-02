@@ -161,10 +161,10 @@ public class KatasOne
 
     public static int СenturyFromYear(int year) => (year - 1) / 100 + 1;
     
-    public bool Survivor(double n)
+    public static int SecondSymbol(string str, char symbol)
     {
-
-        throw new NotImplementedException();
+        var searchIndexStart = str.IndexOf(symbol);
+        return (str.Length > searchIndexStart) ? str.IndexOf(symbol, searchIndexStart + 1) : 0;
     }
     
 }
