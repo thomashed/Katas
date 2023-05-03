@@ -170,9 +170,8 @@ public class KatasOne
     public static int DuplicateCount2(string str)
     {
         int counter = 0;
-        str.GroupBy(c => c).Aggregate(counter, (index, value) => value.Count() > 1 ? counter++ : 0);
-        
-        throw new NotImplementedException();
+        str.ToLower().GroupBy(c => c).Aggregate(counter, (index, value) => value.Count() > 1 ? counter++ : 0);
+        return counter;
     }
     
 }
