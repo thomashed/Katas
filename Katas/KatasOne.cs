@@ -169,9 +169,7 @@ public class KatasOne
     
     public static int DuplicateCount2(string str)
     {
-        int counter = 0;
-        str.ToLower().GroupBy(c => c).Aggregate(counter, (index, value) => value.Count() > 1 ? counter++ : 0);
-        return counter;
+        return str.ToLower().GroupBy(c => c).Count(chars => chars.Count() > 1);
     }
     
 }
