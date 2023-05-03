@@ -167,4 +167,12 @@ public class KatasOne
         return (str.Length > searchIndexStart) ? str.IndexOf(symbol, searchIndexStart + 1) : 0;
     }
     
+    public static int DuplicateCount2(string str)
+    {
+        int counter = 0;
+        str.GroupBy(c => c).Aggregate(counter, (index, value) => value.Count() > 1 ? counter++ : 0);
+        
+        throw new NotImplementedException();
+    }
+    
 }
