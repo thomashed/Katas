@@ -179,4 +179,9 @@ public class KatasOne
             stringAlternateCase += char.IsUpper(c) ? char.ToLower(c) : char.ToUpper(c));
     }
     
+    public static string ToAlternatingCase2(string s)
+    {
+        return string.Concat(s.Select(c => char.IsUpper(c) ? char.ToLower(c) : char.ToUpper(c)));
+    }
+    
 }
