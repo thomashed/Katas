@@ -172,4 +172,11 @@ public class KatasOne
         return str.ToLower().GroupBy(c => c).Count(chars => chars.Count() > 1);
     }
     
+    public static string ToAlternatingCase (string s)
+    {
+        var stringAlternateCase = "";
+        return s.Aggregate(stringAlternateCase, (string a, char c) => 
+            stringAlternateCase += char.IsUpper(c) ? char.ToLower(c) : char.ToUpper(c));
+    }
+    
 }
