@@ -202,6 +202,8 @@ public class KatasOne
             "Nine"
         };
         
+        if (number >= numbers.Length) throw new ArgumentException($"Invalid argument: {number}");
+        
         return numbers[number];
     }
     
