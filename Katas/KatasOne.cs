@@ -186,6 +186,24 @@ public class KatasOne
     
     public static int SumTwoSmallestNumbers2(int[] numbers) => numbers.OrderBy(i => i).Take(2).Sum();
     
+    public static string SwitchItUp(int number)
+    {
+        var numbers = new string[]
+        {
+            "Zero",
+            "One",
+            "Two",
+            "Three",
+            "Four",
+            "Five",
+            "Six",
+            "Seven",
+            "Eight",
+            "Nine"
+        };
+        
+        return numbers[number];
+    }
     
     
     
