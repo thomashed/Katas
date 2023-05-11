@@ -207,6 +207,9 @@ public class KatasOne
         return numbers[number];
     }
     
-    
+    public static int FinalGrade(int exam, int projects)
+    {
+        throw new NotImplementedException();
+    }
     
 }
