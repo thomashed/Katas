@@ -210,19 +210,10 @@ public class KatasOne
     public static int FinalGrade(int exam, int projects)
     {
         var finalGrade = 0;
-        
-        if (exam > 90 && projects >= 5)
-        {
-            finalGrade = 100;
-        }
-        else if (exam > 75 && projects >= 5)
-        {
-            finalGrade = 90;
-        }
-        else if (exam > 50 && projects >= 2)
-        {
-            finalGrade = 75;
-        }
+
+        if (exam > 90 || projects > 10) finalGrade = 100;
+        else if (exam > 75 && projects > 4) finalGrade = 90;
+        else if (exam > 50 && projects > 1) finalGrade = 75;
 
         return finalGrade;
     }
