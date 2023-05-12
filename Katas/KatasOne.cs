@@ -217,5 +217,10 @@ public class KatasOne
 
         return finalGrade;
     }
+ 
+    public static string AbbrevName2(string name)
+    {
+        return "";
+    }
     
 }
