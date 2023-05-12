@@ -218,9 +218,8 @@ public class KatasOne
         return finalGrade;
     }
  
-    public static string AbbrevName2(string name)
-    {
-        return "";
-    }
-    
+    public static string AbbrevName2(string name) => 
+        string.Join('.', name.Split(' ').Select(s => s[0])).ToUpper();
+
+
 }
