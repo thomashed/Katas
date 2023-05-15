@@ -223,7 +223,7 @@ public class KatasOne
 
     public static float Combat(float health, float damage)
     {
-        throw new NotImplementedException();
+        return (health - damage) > 0 ? health - damage : 0;
     }
 
 }
