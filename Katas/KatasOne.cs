@@ -221,5 +221,9 @@ public class KatasOne
     public static string AbbrevName2(string name) => 
         string.Join('.', name.Split(' ').Select(s => s[0])).ToUpper();
 
+    public static float Combat(float health, float damage)
+    {
+        throw new NotImplementedException();
+    }
 
 }
