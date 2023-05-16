@@ -223,4 +223,9 @@ public class KatasOne
 
     public static float Combat(float health, float damage) => health >= damage ? health - damage : 0;
 
+    public static int EnoughSpace(int cap, int on, int wait)
+    {
+        throw new NotImplementedException();
+    }
+    
 }
