@@ -229,14 +229,14 @@ public class KatasOne
     // "AB","Ab"     -> false
     public static bool IsOpposite(string s1, string s2)
     {
-        if (s1 != s2)
+        if (string.IsNullOrEmpty(s1) || !string.Equals(s1, s2, StringComparison.OrdinalIgnoreCase))
         {
             return false;
         }
         
         for (int i = 0; i < s1.Length; i++)
         {
-            if (s1[i] != s2[i])
+            if (s1[i] == s2[i])
             {
                 return false;
             }
