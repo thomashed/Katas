@@ -231,7 +231,7 @@ public class KatasOne
         !string.IsNullOrEmpty(s1) && 
         s1.SequenceEqual(s2.Select(c => char.IsLower(c) ? char.ToUpper(c) : char.ToLower(c)));
     
-    public static string AbbrevName3(string name)=> string.Join(".", name.Split(' ').Select(s => s[0]));
+    public static string AbbrevName3(string name)=> string.Join(".", name.Split(' ').Select(s => s[0])).ToUpper();
     
     
 }
