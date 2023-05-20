@@ -234,11 +234,11 @@ public class KatasOne
     public static string AbbrevName3(string name)=> string.Join(".", name.Split(' ').Select(s => s[0])).ToUpper();
     
     public static int DuplicateCount3(string str)
-    {
-        // aabbcde --> 2, a and b
-        
-        
-        return -1;
+    {  
+        return str
+            .GroupBy(c => c)
+            .Select(chars => chars)
+            .Count(chars => chars.Count() > 1);
     }
     
 }
