@@ -236,7 +236,7 @@ public class KatasOne
     public static int DuplicateCount3(string str)
     {  
         return str
-            .GroupBy(c => c)
+            .GroupBy(c => char.ToLower(c))
             .Select(chars => chars)
             .Count(chars => chars.Count() > 1);
     }
