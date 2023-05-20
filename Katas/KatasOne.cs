@@ -237,7 +237,6 @@ public class KatasOne
     {  
         return str
             .GroupBy(c => char.ToLower(c))
-            .Select(chars => chars)
             .Count(chars => chars.Count() > 1);
     }
     
