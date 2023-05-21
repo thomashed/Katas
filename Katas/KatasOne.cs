@@ -239,7 +239,7 @@ public class KatasOne
     
     // FIND THE LOCH NESS MONSTER. SAVE YOUR TREE FIDDY
     public static bool IsLockNessMonster(string sentence) => 
-        new[]{"tree fiddy","3.50","three fifty"}.Count(sentence.Contains) > 0;
+        new[]{"tree fiddy","3.50","three fifty"}.Count(sentence.ToLower().Contains) > 0;
     
     
     
