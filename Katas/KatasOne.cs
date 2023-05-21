@@ -237,10 +237,14 @@ public class KatasOne
             .GroupBy(char.ToLower)
             .Count(chars => chars.Count() > 1);
     
+    // FIND THE LOCH NESS MONSTER. SAVE YOUR TREE FIDDY
+    // tree fiddy
+    // 3.50 
+    // three fifty
     public static bool IsLockNessMonster(string sentence) 
     {
-        // FIND THE LOCH NESS MONSTER. SAVE YOUR TREE FIDDY
-
+        
+        
         throw new NotImplementedException();
     }
     
