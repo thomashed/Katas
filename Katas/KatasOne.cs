@@ -238,11 +238,9 @@ public class KatasOne
             .Count(chars => chars.Count() > 1);
     
     // FIND THE LOCH NESS MONSTER. SAVE YOUR TREE FIDDY
-    public static bool IsLockNessMonster(string sentence)
-    {
-        var myMoney = new[]{"tree fiddy","3.50","three fifty"};
-        return myMoney.Count(sentence.Contains) > 0;
-    }
+    public static bool IsLockNessMonster(string sentence) => 
+        new[]{"tree fiddy","3.50","three fifty"}.Count(sentence.Contains) > 0;
+    
     
     
 }
