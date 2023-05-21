@@ -241,16 +241,7 @@ public class KatasOne
     public static bool IsLockNessMonster(string sentence)
     {
         var myMoney = new[]{"tree fiddy","3.50","three fifty"};
-
-        foreach (var threeFiddy in myMoney)
-        {
-            if (sentence.Contains(threeFiddy))
-            {
-                return true;
-            }
-        }
-
-        return false;
+        return myMoney.Select(s => sentence.Contains(s)).ToArray()[0];
     }
     
     
