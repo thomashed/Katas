@@ -243,16 +243,10 @@ public class KatasOne
  
     
     // "ab","AB"     -> true
-    public static bool IsOpposite2(string s1, string s2)
-    {
-        var isOpposite = !string.IsNullOrEmpty(s1) && 
-                         s1.SequenceEqual(s2.Select(
-                             c => char.IsUpper(c) ? char.ToLower(c) : char.ToUpper(c)
-                             ));
-        return isOpposite; 
-    }
-    
-    
+    public static bool IsOpposite2(string s1, string s2) => 
+        !string.IsNullOrEmpty(s1) && 
+        s1.SequenceEqual(s2.Select(
+            c => char.IsUpper(c) ? char.ToLower(c) : char.ToUpper(c)));
 }
 
 
