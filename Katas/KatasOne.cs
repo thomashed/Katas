@@ -240,7 +240,18 @@ public class KatasOne
     // FIND THE LOCH NESS MONSTER. SAVE YOUR TREE FIDDY
     public static bool IsLockNessMonster(string sentence) => 
         new[]{"tree fiddy","3.50","three fifty"}.Count(sentence.ToLower().Contains) > 0;
+ 
     
+    // "ab","AB"     -> true
+    public static bool IsOpposite2(string s1, string s2)
+    {
+
+
+
+
+
+        throw new NotImplementedException();
+    }
     
     
 }
