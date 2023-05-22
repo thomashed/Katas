@@ -245,12 +245,16 @@ public class KatasOne
     // "ab","AB"     -> true
     public static bool IsOpposite2(string s1, string s2)
     {
-
-
-
-
-
-        throw new NotImplementedException();
+        var isOpposite = false;
+        if (s1.ToLower().Equals(s2.ToLower())) // same letters
+        {
+            for (int i = 0; i < s1.Length; i++)
+            {
+                isOpposite = (char.IsUpper(s1[i]) && char.IsLower(s2[i]) || (char.IsLower(s1[i]) && char.IsUpper(s2[i])));
+            }
+        }
+        
+        return isOpposite; 
     }
     
     
