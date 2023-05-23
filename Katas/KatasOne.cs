@@ -247,6 +247,13 @@ public class KatasOne
         !string.IsNullOrEmpty(s1) && 
         s1.SequenceEqual(s2.Select(
             c => char.IsUpper(c) ? char.ToLower(c) : char.ToUpper(c)));
+    
+    public static int SecondSymbol2(string str, char symbol)
+    {
+        
+        throw new NotImplementedException();
+    }
+    
 }
 
 
