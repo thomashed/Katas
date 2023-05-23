@@ -248,10 +248,12 @@ public class KatasOne
         s1.SequenceEqual(s2.Select(
             c => char.IsUpper(c) ? char.ToLower(c) : char.ToUpper(c)));
     
+    // second_symbol('Hello world!!!','l') --> 3
+    // second_symbol('Hello world!!!', 'A') --> -1
     public static int SecondSymbol2(string str, char symbol)
     {
-        
-        throw new NotImplementedException();
+        var firstOccurrence = str.IndexOf(symbol);
+        return str.Length > firstOccurrence ? str.IndexOf(symbol, firstOccurrence + 1) : -1;
     }
     
 }
