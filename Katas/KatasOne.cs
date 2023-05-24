@@ -256,6 +256,13 @@ public class KatasOne
         return str.Length > firstOccurrence ? str.IndexOf(symbol, firstOccurrence + 1) : -1;
     }
     
+    public static int SumTwoSmallestNumbers3(int[] numbers)
+    {
+        
+        
+        throw new NotImplementedException();
+    }
+    
 }
 
 
