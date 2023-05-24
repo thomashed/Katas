@@ -256,10 +256,9 @@ public class KatasOne
         return str.Length > firstOccurrence ? str.IndexOf(symbol, firstOccurrence + 1) : -1;
     }
     
-    public static int SumTwoSmallestNumbers3(int[] numbers)
-    {
-        return numbers.OrderBy(i => i).Take(2).Sum();
-    }
+    public static int SumTwoSmallestNumbers3(int[] numbers) => 
+        numbers.OrderBy(i => i).Take(2).Sum();
+    
     
 }
 
