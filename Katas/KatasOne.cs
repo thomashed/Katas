@@ -258,8 +258,7 @@ public class KatasOne
     
     public static int SumTwoSmallestNumbers3(int[] numbers)
     {
-        var sum = numbers.OrderBy(i => i).Take(2).Sum();
-        return sum;
+        return numbers.OrderBy(i => i).Take(2).Sum();
     }
     
 }
