@@ -10,11 +10,23 @@ public static class ExtensionMethods
         return new Object();
     }
     
+    // "hello WORLD".ToAlternatingCase() == "HELLO world"
     public static string ToAlternatingCase (this string s)
     {
-        
-        
-        throw new NotImplementedException();
+        var alternateString = "";
+        foreach (var letter in s)
+        {
+            if (char.IsLower(letter))
+            {
+                alternateString += char.ToUpper(letter);
+            }
+            else
+            {
+                alternateString += char.ToLower(letter);
+            }
+        }
+
+        return alternateString; 
     }
     
 }
