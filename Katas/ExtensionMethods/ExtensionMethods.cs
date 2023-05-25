@@ -12,11 +12,8 @@ public static class ExtensionMethods
     }
     
     // "hello WORLD".ToAlternatingCase() == "HELLO world"
-    public static string ToAlternatingCase (this string s)
-    {
-        return new string(
+    public static string ToAlternatingCase (this string s) => new string(
             s.Select(c => char.IsLower(c) ? 
                 char.ToUpper(c) : char.ToLower(c)).ToArray());
-    }
     
 }
