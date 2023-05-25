@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Runtime.InteropServices.JavaScript;
+using System.Security.Cryptography;
 
 namespace Katas.ExtensionMethods;
 
@@ -13,20 +14,9 @@ public static class ExtensionMethods
     // "hello WORLD".ToAlternatingCase() == "HELLO world"
     public static string ToAlternatingCase (this string s)
     {
-        var alternateString = "";
-        foreach (var letter in s)
-        {
-            if (char.IsLower(letter))
-            {
-                alternateString += char.ToUpper(letter);
-            }
-            else
-            {
-                alternateString += char.ToLower(letter);
-            }
-        }
-
-        return alternateString; 
+        return new string(
+            s.Select(c => char.IsLower(c) ? 
+                char.ToUpper(c) : char.ToLower(c)).ToArray());
     }
     
 }
