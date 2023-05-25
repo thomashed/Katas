@@ -9,4 +9,12 @@ public static class ExtensionMethods
     {
         return new Object();
     }
+    
+    public static string ToAlternatingCase (this string s)
+    {
+        
+        
+        throw new NotImplementedException();
+    }
+    
 }
