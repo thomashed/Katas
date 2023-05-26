@@ -259,6 +259,10 @@ public class KatasOne
     public static int SumTwoSmallestNumbers3(int[] numbers) => 
         numbers.OrderBy(i => i).Take(2).Sum();
     
+    public static int SumNoDuplicates2(int[] arr)
+    {
+        throw new NotImplementedException();
+    }
     
 }
 
