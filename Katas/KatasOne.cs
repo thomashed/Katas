@@ -260,11 +260,10 @@ public class KatasOne
         numbers.OrderBy(i => i).Take(2).Sum();
     
     // [3, 4, 3, 6]
-    public static int SumNoDuplicates2(int[] arr)
-    {
-        var sum = arr.GroupBy(i => i).Where(ints => ints.Count() == 1).Sum(ints => ints.Key);
-        return sum;
-    }
+    public static int SumNoDuplicates2(int[] arr) => 
+        arr.GroupBy(i => i)
+            .Where(ints => ints.Count() == 1)
+            .Sum(ints => ints.Key);
     
 }
 
