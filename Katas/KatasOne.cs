@@ -262,11 +262,10 @@ public class KatasOne
     // [3, 4, 3, 6]
     public static int SumNoDuplicates2(int[] arr) =>
         arr.Sum(i => arr.Count(i1 => i1 == i) == 1 ? i : 0);
-    
-    public static IEnumerable<int> GetIntegersFromList2(List<object> listOfItems) => 
-        listOfItems.Where(item => item.GetType() == typeof(Int32)).Cast<Int32>();
-    
-    
+
+    public static IEnumerable<int> GetIntegersFromList2(List<object> listOfItems) =>
+        listOfItems.OfType<int>();
+
 }
 
 
