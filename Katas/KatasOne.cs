@@ -266,9 +266,12 @@ public class KatasOne
     public static IEnumerable<int> GetIntegersFromList2(List<object> listOfItems) =>
         listOfItems.OfType<int>();
 
+    // "ab","AB"     -> true
     public static bool IsOpposite3(string s1, string s2)
     {
-        throw new NotImplementedException();
+        var isOpposite = s1.SequenceEqual(s2.Select(c => char.IsLower(c) ? char.ToUpper(c) : char.ToLower(c)));
+
+        return isOpposite;
     }
 
 }
