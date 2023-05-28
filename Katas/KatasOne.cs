@@ -266,6 +266,11 @@ public class KatasOne
     public static IEnumerable<int> GetIntegersFromList2(List<object> listOfItems) =>
         listOfItems.OfType<int>();
 
+    public static bool IsOpposite3(string s1, string s2)
+    {
+        throw new NotImplementedException();
+    }
+
 }
 
 
