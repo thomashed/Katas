@@ -272,11 +272,12 @@ public class KatasOne
                          && s1.SequenceEqual(s2.Select(c => char.IsLower(c) ? char.ToUpper(c) : char.ToLower(c)));
 
     
+    // Sam Harris => S.H
     public static string AbbrevName4(string name)
     {
-        var temp = "";
-        
-        return "";
+        var split = name.Split(' ').Select(s => s[0]).ToArray();
+        var abbrev = string.Join(".", split);
+        return abbrev;
     }
 
 }
