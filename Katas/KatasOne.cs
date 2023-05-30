@@ -275,9 +275,8 @@ public class KatasOne
     // Sam Harris => S.H
     public static string AbbrevName4(string name)
     {
-        var split = name.Split(' ').Select(s => s[0]).ToArray();
-        var abbrev = string.Join(".", split).ToUpper();
-        return abbrev;
+        var split = string.Join(".", name.Split(' ').Select(s => s[0]).ToArray()).ToUpper();
+        return split;
     }
 
 }
