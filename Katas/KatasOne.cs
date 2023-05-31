@@ -278,11 +278,10 @@ public class KatasOne
         
     
     // [3, 4, 3, 6] , the function should return 10.
-    public static int SumNoDuplicates3(int[] arr)
-    {
-        return arr.GroupBy(i => i).Where(ints => ints.Count() == 1).Sum(ints => ints.Key);
-    }
-    
+    public static int SumNoDuplicates3(int[] arr) => 
+        arr.GroupBy(i => i).Where(ints => 
+            ints.Count() == 1).Sum(ints => ints.Key);
+
 
 }
 
