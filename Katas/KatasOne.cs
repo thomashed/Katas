@@ -276,6 +276,11 @@ public class KatasOne
     public static string AbbrevName4(string name) => 
         string.Join(".", name.Split(' ').Select(s => s[0]).ToArray()).ToUpper();
         
+    public static int SumNoDuplicates3(int[] arr)
+    {
+
+        throw new NotImplementedException();
+    }
     
 
 }
