@@ -276,10 +276,12 @@ public class KatasOne
     public static string AbbrevName4(string name) => 
         string.Join(".", name.Split(' ').Select(s => s[0]).ToArray()).ToUpper();
         
+    
+    // [3, 4, 3, 6] , the function should return 10.
     public static int SumNoDuplicates3(int[] arr)
     {
-
-        throw new NotImplementedException();
+        var sum = arr.GroupBy(i => i).Where(ints => ints.Count() == 1).Sum(ints => ints.Key);
+        return sum;
     }
     
 
