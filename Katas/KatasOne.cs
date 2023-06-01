@@ -284,7 +284,8 @@ public class KatasOne
     
     public static int BetweenExtremes2(int[] numbers)
     {
-        throw new NotImplementedException();
+
+        return 0;
     }
 
 }
