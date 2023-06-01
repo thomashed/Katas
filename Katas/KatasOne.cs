@@ -282,10 +282,9 @@ public class KatasOne
         arr.GroupBy(i => i).Where(ints => 
             ints.Count() == 1).Sum(group => group.Key);
     
-    public static int BetweenExtremes2(int[] numbers)
-    {
-        return numbers.Max() - numbers.Min();
-    }
+    public static int BetweenExtremes2(int[] numbers) => 
+        numbers.Max() - numbers.Min();
+    
 
 }
 
