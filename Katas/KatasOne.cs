@@ -284,8 +284,7 @@ public class KatasOne
     
     public static int BetweenExtremes2(int[] numbers)
     {
-        var diff = numbers.Max() - numbers.Min();
-        return diff;
+        return numbers.Max() - numbers.Min();
     }
 
 }
