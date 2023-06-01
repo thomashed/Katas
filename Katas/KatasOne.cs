@@ -283,9 +283,8 @@ public class KatasOne
             ints.Count() == 1).Sum(group => group.Key);
     
     public static int BetweenExtremes2(int[] numbers) => 
-        numbers.Max() - numbers.Min();
+        numbers.Length > 0 ? numbers.Max() - numbers.Min() : 0;
     
-
 }
 
 
