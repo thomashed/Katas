@@ -281,6 +281,11 @@ public class KatasOne
     public static int SumNoDuplicates3(int[] arr) => 
         arr.GroupBy(i => i).Where(ints => 
             ints.Count() == 1).Sum(group => group.Key);
+    
+    public static int BetweenExtremes2(int[] numbers)
+    {
+        throw new NotImplementedException();
+    }
 
 }
 
