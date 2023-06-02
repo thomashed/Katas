@@ -285,10 +285,12 @@ public class KatasOne
     public static int BetweenExtremes2(int[] numbers) => 
         numbers.Length > 0 ? numbers.Max() - numbers.Min() : 0;
     
+        // "aBcd","AbCD" -> true
     public static bool IsOpposite4(string s1, string s2)
     {
-        
-        throw new NotImplementedException();
+        var isOpposite = s1.SequenceEqual(s2.Select(c => char.IsLower(c) ? char.ToUpper(c) : char.ToLower(c)));
+
+        return isOpposite;
     }
     
 }
