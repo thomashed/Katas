@@ -286,12 +286,13 @@ public class KatasOne
         numbers.Length > 0 ? numbers.Max() - numbers.Min() : 0;
     
         // "aBcd","AbCD" -> true
-    public static bool IsOpposite4(string s1, string s2)
-    {
-        return !string.IsNullOrEmpty(s1) && 
-               !string.IsNullOrEmpty(s2) && 
-               s1.SequenceEqual(s2.Select(c => char.IsLower(c) ? char.ToUpper(c) : char.ToLower(c)));
-    }
+    public static bool IsOpposite4(string s1, string s2) => !string.IsNullOrEmpty(s1) && 
+                                                            !string.IsNullOrEmpty(s2) && 
+                                                            s1.SequenceEqual(s2.Select(c => 
+                                                                char.IsLower(c) ? 
+                                                                    char.ToUpper(c) : 
+                                                                    char.ToLower(c)));
+    
     
 }
 
