@@ -285,6 +285,12 @@ public class KatasOne
     public static int BetweenExtremes2(int[] numbers) => 
         numbers.Length > 0 ? numbers.Max() - numbers.Min() : 0;
     
+    public static bool IsOpposite4(string s1, string s2)
+    {
+        
+        throw new NotImplementedException();
+    }
+    
 }
 
 
