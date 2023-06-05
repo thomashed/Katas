@@ -2,6 +2,7 @@ using System.Collections;
 using System.Globalization;
 using System.Net.NetworkInformation;
 using System.Runtime.InteropServices;
+using System.Text.RegularExpressions;
 using Katas.ExtensionMethods;
 using Microsoft.VisualBasic;
 
@@ -296,8 +297,8 @@ public class KatasOne
     
     public static bool Alphanumeric2(string str)
     {
-        
-        throw new NotImplementedException();
+        var isAlphanumeric = Regex.IsMatch(str,"^[a-zA-Z0-9]*$");
+        return isAlphanumeric; 
     }
     
 }
