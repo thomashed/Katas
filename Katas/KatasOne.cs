@@ -294,6 +294,12 @@ public class KatasOne
                                                                     char.ToLower(c)));
     
     
+    public static bool Alphanumeric2(string str)
+    {
+        
+        throw new NotImplementedException();
+    }
+    
 }
 
 
