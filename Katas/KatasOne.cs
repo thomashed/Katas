@@ -297,8 +297,7 @@ public class KatasOne
     
     public static bool Alphanumeric2(string str)
     {
-        var isAlphanumeric = Regex.IsMatch(str,"^[a-zA-Z0-9]*$");
-        return isAlphanumeric; 
+        return Regex.IsMatch(str,"^[a-zA-Z0-9]*$");
     }
     
 }
