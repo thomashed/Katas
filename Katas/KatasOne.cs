@@ -295,11 +295,10 @@ public class KatasOne
                                                                     char.ToLower(c)));
     
     
-    public static bool Alphanumeric2(string str)
-    {
-        var isAlphanumeric = !string.IsNullOrEmpty(str) && str.All(char.IsLetterOrDigit);
-        return isAlphanumeric;
-    }
+    public static bool Alphanumeric2(string str) => 
+        !string.IsNullOrEmpty(str) && 
+        str.All(char.IsLetterOrDigit);
+    
     
 }
 
