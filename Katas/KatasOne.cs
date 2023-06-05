@@ -297,7 +297,7 @@ public class KatasOne
     
     public static bool Alphanumeric2(string str)
     {
-        var isAlphanumeric = !string.IsNullOrEmpty(str) && str.All(c => char.IsLetterOrDigit(c));
+        var isAlphanumeric = !string.IsNullOrEmpty(str) && str.All(char.IsLetterOrDigit);
         return isAlphanumeric;
     }
     
