@@ -299,12 +299,10 @@ public class KatasOne
         str.All(char.IsLetterOrDigit);
     
     // {1, 2, "a", "b"}) => {1, 2}
-    public static IEnumerable<int> GetIntegersFromList3(List<object> listOfItems)
-    {
-        return listOfItems
+    public static IEnumerable<int> GetIntegersFromList3(List<object> listOfItems) => 
+        listOfItems
             .Where(o => o.GetType() == typeof(Int32))
             .Cast<int>();
-    }
 
 }
 
