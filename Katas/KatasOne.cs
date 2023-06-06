@@ -294,12 +294,15 @@ public class KatasOne
                                                                     char.ToUpper(c) : 
                                                                     char.ToLower(c)));
     
-    
     public static bool Alphanumeric2(string str) => 
         !string.IsNullOrEmpty(str) && 
         str.All(char.IsLetterOrDigit);
     
-    
+    public static IEnumerable<int> GetIntegersFromList3(List<object> listOfItems)
+    {
+        throw new NotImplementedException();
+    }
+
 }
 
 
