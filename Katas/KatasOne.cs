@@ -307,11 +307,9 @@ public class KatasOne
         numbers?.Length > 0 ? numbers.Max() - numbers.Min() : -1;
 
     // ('Hello world!!!','l') --> 3
-    public static int SecondSymbol3(string str, char symbol)
-    {
-        var secondIndex = str.IndexOf(symbol, str.IndexOf(symbol) + 1);
-        return secondIndex;
-    }
+    public static int SecondSymbol3(string str, char symbol) => 
+        str.IndexOf(symbol, str.IndexOf(symbol) + 1);
+    
 
 }
 
