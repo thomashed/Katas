@@ -306,10 +306,13 @@ public class KatasOne
     public static int BetweenExtremes3(int[] numbers) => 
         numbers?.Length > 0 ? numbers.Max() - numbers.Min() : -1;
 
+    // ('Hello world!!!','l') --> 3
     public static int SecondSymbol3(string str, char symbol)
     {
+        var firstIndex = str.IndexOf(symbol);
+        var secondIndex = str.IndexOf(symbol, firstIndex + 1);
         
-        return -1;
+        return secondIndex;
     }
 
 }
