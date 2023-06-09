@@ -312,9 +312,6 @@ public class KatasOne
  
     // input = ["red", "green", "red", "blue", "blue"] --> 2
     // [Blue, Aqua, Blue, Teal, Blue, Black] --> 1
-    // Console.WriteLine("key: " + grouping.Key);
-    // Console.WriteLine("gCount: " + grouping.Count());
-    // Console.WriteLine("i: " + i);
     public static int NumberOfPairs(string[] gloves)
     {
         var pairs = gloves
