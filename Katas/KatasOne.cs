@@ -315,15 +315,11 @@ public class KatasOne
     // Console.WriteLine("key: " + grouping.Key);
     // Console.WriteLine("gCount: " + grouping.Count());
     // Console.WriteLine("i: " + i);
-    public static int NumberOfPairs(string[] gloves)
-    {
-        var pairs = gloves
+    public static int NumberOfPairs(string[] gloves) => 
+        gloves
             .GroupBy(s => s)
             .Aggregate(0, (i, grouping) => 
                 i += grouping.Count() / 2);
-        
-        return pairs;
-    }
 
 }
 
