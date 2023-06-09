@@ -310,10 +310,23 @@ public class KatasOne
     public static int SecondSymbol3(string str, char symbol) => 
         str.IndexOf(symbol, str.IndexOf(symbol) + 1);
  
-    public static int NumberOfPairs(string[] gloves) {
+    // input = ["red", "green", "red", "blue", "blue"] --> 2
+    // [Blue, Aqua, Blue, Teal, Blue, Black] --> 1
+    // Console.WriteLine("key: " + grouping.Key);
+    // Console.WriteLine("gCount: " + grouping.Count());
+    // Console.WriteLine("i: " + i);
+    public static int NumberOfPairs(string[] gloves)
+    {
+        var pairs = 0;
+        gloves
+            .GroupBy(s => s)
+            .Aggregate(pairs, (i, grouping) =>
+                {
+                    return pairs += grouping.Count() / 2;
+                }
+            );
         
-        
-        return -1;
+        return pairs;
     }
 
 }
