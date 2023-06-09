@@ -309,7 +309,12 @@ public class KatasOne
     // ('Hello world!!!','l') --> 3
     public static int SecondSymbol3(string str, char symbol) => 
         str.IndexOf(symbol, str.IndexOf(symbol) + 1);
-    
+ 
+    public static int NumberOfPairs(string[] gloves) {
+        
+        
+        return -1;
+    }
 
 }
 
