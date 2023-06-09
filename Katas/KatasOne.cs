@@ -319,11 +319,8 @@ public class KatasOne
     {
         var pairs = gloves
             .GroupBy(s => s)
-            .Aggregate(0, (i, grouping) =>
-                {
-                    return i += grouping.Count() / 2;
-                }
-            );
+            .Aggregate(0, (i, grouping) => 
+                i += grouping.Count() / 2);
         
         return pairs;
     }
