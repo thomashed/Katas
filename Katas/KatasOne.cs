@@ -317,12 +317,11 @@ public class KatasOne
     // Console.WriteLine("i: " + i);
     public static int NumberOfPairs(string[] gloves)
     {
-        var pairs = 0;
-        gloves
+        var pairs = gloves
             .GroupBy(s => s)
-            .Aggregate(pairs, (i, grouping) =>
+            .Aggregate(0, (i, grouping) =>
                 {
-                    return pairs += grouping.Count() / 2;
+                    return i += grouping.Count() / 2;
                 }
             );
         
