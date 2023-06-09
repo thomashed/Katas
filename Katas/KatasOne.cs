@@ -321,6 +321,13 @@ public class KatasOne
         
         return pairs;
     }
+    
+    public static int NumberOfPairs3(string[] gloves) => 
+        gloves
+            .GroupBy(s => s)
+            .Select(grouping => grouping.Count() / 2)
+            .Sum();
+    
 
 }
 
