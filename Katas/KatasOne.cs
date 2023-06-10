@@ -328,10 +328,9 @@ public class KatasOne
             .Select(grouping => grouping.Count() / 2)
             .Sum();
     
-    public static int GetAverage2(int[] marks)
-    {
-        return (int)marks.Average();
-    }
+    public static int GetAverage2(int[] marks) => 
+        (int)marks.Average();
+    
 
 }
 
