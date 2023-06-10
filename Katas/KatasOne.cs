@@ -330,8 +330,7 @@ public class KatasOne
     
     public static int GetAverage2(int[] marks)
     {
-        
-        throw new NotImplementedException();
+        return marks.Sum() / marks.Length;
     }
 
 }
