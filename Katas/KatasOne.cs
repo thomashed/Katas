@@ -334,7 +334,13 @@ public class KatasOne
     // "aBcd","AbCD" -> true
     public static bool IsOpposite5(string s1, string s2)
     {
-        var isOpposite = s1.SequenceEqual(s2.Select(c => char.IsLower(c) ? char.ToUpper(c) : char.ToLower(c)));
+        var isOpposite = 
+            !string.IsNullOrEmpty(s1) && 
+            !string.IsNullOrEmpty(s2) && 
+            s1.SequenceEqual(
+                s2.Select(c => char.IsLower(c) ? 
+                    char.ToUpper(c) : 
+                    char.ToLower(c)));
         return isOpposite;
     }
     
