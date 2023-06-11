@@ -331,6 +331,11 @@ public class KatasOne
     public static int GetAverage2(int[] marks) => 
         (int)marks.Average();
     
+    public static bool IsOpposite5(string s1, string s2)
+    {
+        throw new NotImplementedException();
+    }
+    
 
 }
 
