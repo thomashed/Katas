@@ -342,6 +342,10 @@ public class KatasOne
                        char.ToLower(c)));
     }
     
+    public static int SumIgnoreDuplicates(int[] arr)
+    {
+        throw new NotImplementedException();
+    }
 
 }
 
