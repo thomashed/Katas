@@ -2,6 +2,7 @@ using System.Collections;
 using System.Globalization;
 using System.Net.NetworkInformation;
 using System.Runtime.InteropServices;
+using System.Security.Authentication.ExtendedProtection;
 using System.Text.RegularExpressions;
 using Katas.ExtensionMethods;
 using Microsoft.VisualBasic;
@@ -342,9 +343,14 @@ public class KatasOne
                        char.ToLower(c)));
     }
     
+    //  {3, 4, 3, 6, 1, 1,3, 9, 2, 10}
     public static int SumIgnoreDuplicates(int[] arr)
     {
-        throw new NotImplementedException();
+        var sum = arr.GroupBy(i => i)
+            .Where(ints => ints.Count() == 1)
+            .Select(ints => ints.Key)
+            .Sum();
+        return sum;
     }
 
 }
