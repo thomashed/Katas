@@ -344,14 +344,13 @@ public class KatasOne
     }
     
     //  {3, 4, 3, 6, 1, 1,3, 9, 2, 10}
-    public static int SumIgnoreDuplicates(int[] arr)
-    {
-        var sum = arr.GroupBy(i => i)
+    public static int SumIgnoreDuplicates(int[] arr) => 
+        arr.GroupBy(i => i)
             .Where(ints => ints.Count() == 1)
             .Select(ints => ints.Key)
             .Sum();
-        return sum;
-    }
+        
+    
 
 }
 
