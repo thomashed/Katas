@@ -352,8 +352,7 @@ public class KatasOne
         
     public static int MakeNegative(int number)
     {
-        var negativeNumber = number < 0 ? number : -number;
-        return negativeNumber;
+        return (number < 0) ? number : -number;
     }
 
 }
