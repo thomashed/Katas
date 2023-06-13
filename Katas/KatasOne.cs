@@ -352,7 +352,7 @@ public class KatasOne
         
     public static int MakeNegative(int number)
     {
-        var negativeNumber = Int32.IsNegative(number) ? number : -number;
+        var negativeNumber = number < 0 ? number : -number;
         return negativeNumber;
     }
 
