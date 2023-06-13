@@ -350,10 +350,9 @@ public class KatasOne
             .Select(ints => ints.Key)
             .Sum();
         
-    public static int MakeNegative(int number)
-    {
-        return (number < 0) ? number : -number;
-    }
+    public static int MakeNegative(int number) => 
+        (number < 0) ? number : -number;
+    
 
 }
 
