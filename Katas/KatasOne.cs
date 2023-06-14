@@ -352,7 +352,12 @@ public class KatasOne
         
     public static int MakeNegative(int number) => 
         -Math.Abs(number);
-    
+ 
+    public static string ToAlternatingCase3(string s)
+    {
+        
+        throw new NotImplementedException();
+    }
 
 }
 
