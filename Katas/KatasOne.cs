@@ -355,8 +355,7 @@ public class KatasOne
  
     public static string ToAlternatingCase3(string s)
     {
-        var alternateCasing = s.Select(c => char.IsLower(c) ? char.ToUpper(c) : char.ToLower(c)).ToArray();
-        return string.Concat(alternateCasing);
+        return string.Concat(s.Select(c => char.IsLower(c) ? char.ToUpper(c) : char.ToLower(c)).ToArray());
     }
 
 }
