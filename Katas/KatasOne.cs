@@ -353,10 +353,9 @@ public class KatasOne
     public static int MakeNegative(int number) => 
         -Math.Abs(number);
  
-    public static string ToAlternatingCase3(string s)
-    {
-        return string.Concat(s.Select(c => char.IsLower(c) ? char.ToUpper(c) : char.ToLower(c)).ToArray());
-    }
+    public static string ToAlternatingCase3(string s) => 
+        string.Concat(s.Select(c => char.IsLower(c) ? char.ToUpper(c) : char.ToLower(c)).ToArray());
+    
 
 }
 
