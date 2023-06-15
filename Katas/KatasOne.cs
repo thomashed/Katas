@@ -355,7 +355,12 @@ public class KatasOne
  
     public static string ToAlternatingCase3(string s) => 
         string.Concat(s.Select(c => char.IsLower(c) ? char.ToUpper(c) : char.ToLower(c)).ToArray());
-    
+ 
+    public static int SumTwoSmallestNumbers4(int[] numbers)
+    {
+
+        throw new NotImplementedException();
+    }
 
 }
 
