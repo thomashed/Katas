@@ -356,10 +356,11 @@ public class KatasOne
     public static string ToAlternatingCase3(string s) => 
         string.Concat(s.Select(c => char.IsLower(c) ? char.ToUpper(c) : char.ToLower(c)).ToArray());
  
+    //  [19, 5, 42, 2, 77], the output should be 7
     public static int SumTwoSmallestNumbers4(int[] numbers)
     {
-
-        throw new NotImplementedException();
+        var sumOfLowest = numbers.Order().Take(2).Sum();
+        return sumOfLowest;
     }
 
 }
