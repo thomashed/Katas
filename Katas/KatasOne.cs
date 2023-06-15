@@ -357,11 +357,9 @@ public class KatasOne
         string.Concat(s.Select(c => char.IsLower(c) ? char.ToUpper(c) : char.ToLower(c)).ToArray());
  
     //  [19, 5, 42, 2, 77], the output should be 7
-    public static int SumTwoSmallestNumbers4(int[] numbers)
-    {
-        var sumOfLowest = numbers.Order().Take(2).Sum();
-        return sumOfLowest;
-    }
+    public static int SumTwoSmallestNumbers4(int[] numbers) => 
+        numbers.Order().Take(2).Sum();
+    
 
 }
 
