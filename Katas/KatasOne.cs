@@ -360,10 +360,14 @@ public class KatasOne
     public static int SumTwoSmallestNumbers4(int[] numbers) => 
         numbers.Order().Take(2).Sum();
     
+    // aeiouAEIOU 
     public static string Replace(string s)
     {
+        // var vowels = new[]{"a","e","i","o","u","A","E","I","O","U"};
+        var vowels = "aeiouAEIOU";
+        var sortedForVowels = s.Select(c => vowels.Contains(c) ? '!' : c);
         
-        throw new NotImplementedException();
+        return string.Concat(sortedForVowels);
     }
     
 
