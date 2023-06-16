@@ -360,6 +360,12 @@ public class KatasOne
     public static int SumTwoSmallestNumbers4(int[] numbers) => 
         numbers.Order().Take(2).Sum();
     
+    public static string Replace(string s)
+    {
+        
+        throw new NotImplementedException();
+    }
+    
 
 }
 
