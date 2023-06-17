@@ -369,8 +369,7 @@ public class KatasOne
         
         return string.Concat(sortedForVowels);
     }
-
-    // 'Hello world!!!','l') --> 3
+    
     public static int SecondSymbolIndex(string str, char symbol)
     {
         var indexHitToSearchFrom = str.IndexOf(symbol) + 1;
