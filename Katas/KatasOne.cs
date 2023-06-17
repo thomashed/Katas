@@ -373,8 +373,8 @@ public class KatasOne
     // 'Hello world!!!','l') --> 3
     public static int SecondSymbolIndex(string str, char symbol)
     {
-        var firstIndex = str.IndexOf(symbol);
-        var secondIndex = str.Length > firstIndex ? str.IndexOf(symbol, firstIndex + 1) : -1;
+        var indexHitToSearchFrom = str.IndexOf(symbol) + 1;
+        var secondIndex = str.Length > indexHitToSearchFrom ? str.IndexOf(symbol, indexHitToSearchFrom) : -1;
 
         return secondIndex;
     }    
