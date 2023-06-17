@@ -374,7 +374,7 @@ public class KatasOne
     public static int SecondSymbolIndex(string str, char symbol)
     {
         var firstIndex = str.IndexOf(symbol);
-        var secondIndex = str.IndexOf(symbol, firstIndex + 1);
+        var secondIndex = str.Length > firstIndex ? str.IndexOf(symbol, firstIndex + 1) : -1;
 
         return secondIndex;
     }    
