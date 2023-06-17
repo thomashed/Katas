@@ -369,7 +369,11 @@ public class KatasOne
         
         return string.Concat(sortedForVowels);
     }
-    
+
+    public static int SecondSymbolIndex(string str, char symbol)
+    {
+        throw new NotImplementedException();
+    }    
 
 }
 
