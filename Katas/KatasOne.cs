@@ -374,7 +374,12 @@ public class KatasOne
     {
         var indexHitToSearchFrom = str.IndexOf(symbol) + 1;
         return str.Length > indexHitToSearchFrom ? str.IndexOf(symbol, indexHitToSearchFrom) : -1;
-    }    
+    }
+    
+    public static int DiffExtremes(int[] numbers)
+    {
+        throw new NotImplementedException();
+    }
 
 }
 
