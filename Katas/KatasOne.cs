@@ -379,8 +379,7 @@ public class KatasOne
     // [1, 434, 555, 34, 112] should return 554 (i.e., 555 - 1).
     public static int DiffExtremes(int[] numbers)
     {
-        var ordered = numbers.Order();
-        return ordered.Last() - ordered.First();
+        return numbers.Max() - numbers.Min();
     }
 
 }
