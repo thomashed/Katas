@@ -380,10 +380,7 @@ public class KatasOne
     public static int DiffExtremes(int[] numbers)
     {
         var ordered = numbers.Order();
-        var lowest = ordered.First();
-        var highest = ordered.Last();
-
-        return highest - lowest;
+        return ordered.Last() - ordered.First();
     }
 
 }
