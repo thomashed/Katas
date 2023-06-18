@@ -376,9 +376,14 @@ public class KatasOne
         return str.Length > indexHitToSearchFrom ? str.IndexOf(symbol, indexHitToSearchFrom) : -1;
     }
     
+    // [1, 434, 555, 34, 112] should return 554 (i.e., 555 - 1).
     public static int DiffExtremes(int[] numbers)
     {
-        throw new NotImplementedException();
+        var ordered = numbers.Order();
+        var lowest = ordered.First();
+        var highest = ordered.Last();
+
+        return highest - lowest;
     }
 
 }
