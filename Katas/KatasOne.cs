@@ -381,10 +381,9 @@ public class KatasOne
         numbers.Max() - numbers.Min();
 
     // replace("!Hi! Hi!") === "!H!! H!!"
-    public static string ReplaceWith(string s, char symbol)
-    {
-        return string.Concat(s.Select(c => "aeiouAEIOU".Contains(c) ? '!' : c));
-    }
+    public static string ReplaceWith(string s, char symbol) =>  
+        string.Concat(s.Select(c => "aeiouAEIOU".Contains(c) ? '!' : c));
+    
 
 }
 
