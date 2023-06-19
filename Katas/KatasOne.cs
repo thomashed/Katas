@@ -383,8 +383,7 @@ public class KatasOne
     // replace("!Hi! Hi!") === "!H!! H!!"
     public static string ReplaceWith(string s, char symbol)
     {
-        var sortedString = s.Select(c => c == symbol ? '!' : c);
-        return new string(sortedString.ToArray());
+        return string.Concat(s.Select(c => "aeiouAEIOU".Contains(c) ? '!' : c));
     }
 
 }
