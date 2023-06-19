@@ -380,11 +380,12 @@ public class KatasOne
     public static int DiffExtremes(int[] numbers) => 
         numbers.Max() - numbers.Min();
 
+    // replace("!Hi! Hi!") === "!H!! H!!"
     public static string ReplaceWith(string s)
     {
-        
-        
-        throw new NotImplementedException();
+        var vowels = "aeiouAEIOU";
+        var sortedString = s.Select(c => vowels.Contains(c) ? '!' : c);
+        return new string(sortedString.ToArray());
     }
 
 }
