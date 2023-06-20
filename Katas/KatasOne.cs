@@ -383,7 +383,11 @@ public class KatasOne
     // replace("!Hi! Hi!") === "!H!! H!!"
     public static string ReplaceWith(string s, char symbol) =>  
         string.Concat(s.Select(c => "aeiouAEIOU".Contains(c) ? '!' : c));
-    
+
+    public static int SumNoUnique(int[] arr)
+    {
+        throw new NotImplementedException();
+    }
 
 }
 
