@@ -385,10 +385,11 @@ public class KatasOne
         string.Concat(s.Select(c => "aeiouAEIOU".Contains(c) ? '!' : c));
 
     // for the list [3, 4, 3, 6] , the function should return 10.
-    public static int SumNoUnique(int[] arr)
-    {
-        return arr.GroupBy(i => i).Sum(ints => ints.Count() == 1 ? ints.Key : 0);
-    }
+    public static int SumNoUnique(int[] arr) => 
+        arr
+            .GroupBy(i => i)
+            .Sum(ints => ints.Count() == 1 ? ints.Key : 0);
+    
 
 }
 
