@@ -384,9 +384,11 @@ public class KatasOne
     public static string ReplaceWith(string s, char symbol) =>  
         string.Concat(s.Select(c => "aeiouAEIOU".Contains(c) ? '!' : c));
 
+    // for the list [3, 4, 3, 6] , the function should return 10.
     public static int SumNoUnique(int[] arr)
     {
-        throw new NotImplementedException();
+        var noDuplicatedNumbers = arr.GroupBy(i => i).Where(ints => ints.Count() == 1).Sum(ints => ints.Key);
+        return noDuplicatedNumbers;
     }
 
 }
