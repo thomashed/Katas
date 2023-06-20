@@ -387,8 +387,7 @@ public class KatasOne
     // for the list [3, 4, 3, 6] , the function should return 10.
     public static int SumNoUnique(int[] arr)
     {
-        var noDuplicatedNumbers = arr.GroupBy(i => i).Sum(ints => ints.Count() == 1 ? ints.Key : 0);
-        return noDuplicatedNumbers;
+        return arr.GroupBy(i => i).Sum(ints => ints.Count() == 1 ? ints.Key : 0);
     }
 
 }
