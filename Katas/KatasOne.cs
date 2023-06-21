@@ -390,6 +390,10 @@ public class KatasOne
             .GroupBy(i => i)
             .Sum(ints => ints.Count() == 1 ? ints.Key : 0);
     
+    public static int SumTwo(int[] numbers)
+    {
+        throw new NotImplementedException();
+    }    
 
 }
 
