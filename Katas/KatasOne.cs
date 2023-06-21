@@ -393,8 +393,7 @@ public class KatasOne
     // [19, 5, 42, 2, 77], the output should be 7
     public static int SumTwo(int[] numbers)
     {
-        var twoFirst = numbers.Order().Take(2);
-        return twoFirst.Sum();
+        return numbers.Order().Take(2).Sum();
     }    
 
 }
