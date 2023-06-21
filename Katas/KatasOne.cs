@@ -396,7 +396,7 @@ public class KatasOne
             .Order()
             .Take(2)
             .Sum();
-        
+    
 
 }
 
