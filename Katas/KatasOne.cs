@@ -391,10 +391,12 @@ public class KatasOne
             .Sum(ints => ints.Count() == 1 ? ints.Key : 0);
     
     // [19, 5, 42, 2, 77], the output should be 7
-    public static int SumTwo(int[] numbers)
-    {
-        return numbers.Order().Take(2).Sum();
-    }    
+    public static int SumTwo(int[] numbers) => 
+        numbers
+            .Order()
+            .Take(2)
+            .Sum();
+        
 
 }
 
