@@ -390,9 +390,11 @@ public class KatasOne
             .GroupBy(i => i)
             .Sum(ints => ints.Count() == 1 ? ints.Key : 0);
     
+    // [19, 5, 42, 2, 77], the output should be 7
     public static int SumTwo(int[] numbers)
     {
-        throw new NotImplementedException();
+        var twoFirst = numbers.Order().Take(2);
+        return twoFirst.Sum();
     }    
 
 }
