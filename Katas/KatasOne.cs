@@ -401,10 +401,10 @@ public class KatasOne
     // result = 2 (1 red pair + 1 blue pair)
     public static int NumberOfGlovePairs(string[] gloves)
     {
-        var groupedGloves = gloves.GroupBy(s => s);
-        var pairs = groupedGloves.Select(gloves => gloves.Count() / 2);
-        
-        return pairs.Sum();
+        return gloves
+            .GroupBy(s => s)
+            .Select(gloves => gloves.Count() / 2)
+            .Sum();
     }
 
 }
