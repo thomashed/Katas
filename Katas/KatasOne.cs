@@ -396,7 +396,10 @@ public class KatasOne
             .Order()
             .Take(2)
             .Sum();
-    
+
+    public static int NumberOfGlovePairs(string[] gloves) {
+        return -1;
+    }
 
 }
 
