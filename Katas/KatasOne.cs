@@ -399,13 +399,10 @@ public class KatasOne
 
     // input = ["red", "green", "red", "blue", "blue"]
     // result = 2 (1 red pair + 1 blue pair)
-    public static int NumberOfGlovePairs(string[] gloves)
-    {
-        return gloves
+    public static int NumberOfGlovePairs(string[] gloves) => gloves
             .GroupBy(s => s)
             .Select(gloves => gloves.Count() / 2)
             .Sum();
-    }
 
 }
 
