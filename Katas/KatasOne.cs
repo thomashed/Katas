@@ -404,7 +404,7 @@ public class KatasOne
         var groupedGloves = gloves.GroupBy(s => s);
         var pairs = groupedGloves.Select(gloves => gloves.Count() / 2);
         
-        return pairs.Any() ? pairs.Sum() : -1;
+        return pairs.Sum();
     }
 
 }
