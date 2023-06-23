@@ -403,6 +403,12 @@ public class KatasOne
             .GroupBy(s => s)
             .Select(gloves => gloves.Count() / 2)
             .Sum();
+    
+    // "aBcd","AbCD" -> true
+    public static bool IsCharsOpposite(string s1, string s2)
+    {
+        throw new NotImplementedException();
+    }
 
 }
 
