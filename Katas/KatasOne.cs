@@ -407,8 +407,13 @@ public class KatasOne
     // "aBcd","AbCD" -> true
     public static bool IsCharsOpposite(string s1, string s2)
     {
-        var IsEqualWhenFlipped = s1.SequenceEqual(s2.Select(c => char.IsUpper(c) ? char.ToLower(c) : char.ToUpper(c)));
-        return IsEqualWhenFlipped;
+        return !string.IsNullOrEmpty(s1) && 
+               !string.IsNullOrEmpty(s2) && 
+               s1.SequenceEqual(s2.
+                   Select(c => 
+                       char.IsUpper(c) ? 
+                       char.ToLower(c) : 
+                       char.ToUpper(c)));
     }
 
 }
