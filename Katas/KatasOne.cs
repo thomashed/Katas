@@ -407,7 +407,8 @@ public class KatasOne
     // "aBcd","AbCD" -> true
     public static bool IsCharsOpposite(string s1, string s2)
     {
-        throw new NotImplementedException();
+        var IsEqualWhenFlipped = s1.SequenceEqual(s2.Select(c => char.IsUpper(c) ? char.ToLower(c) : char.ToUpper(c)));
+        return IsEqualWhenFlipped;
     }
 
 }
