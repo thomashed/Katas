@@ -416,14 +416,10 @@ public class KatasOne
                        char.ToUpper(c)));
     }
     
-    // "aA11" -> 2 # 'a' and '1'
-    public static int DuplicateTimes(string str)
-    {
-        return str
+    public static int DuplicateTimes(string str) => str
             .Select(c => char.IsUpper(c) ? char.ToLower(c) : c)
             .GroupBy(c => c)
             .Count(chars => chars.Count() > 1);
-    }
 
 }
 
