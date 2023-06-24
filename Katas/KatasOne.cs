@@ -415,6 +415,11 @@ public class KatasOne
                        char.ToLower(c) : 
                        char.ToUpper(c)));
     }
+    
+    public static int DuplicateTimes(string str)
+    {
+        throw new NotImplementedException();
+    }
 
 }
 

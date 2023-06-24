@@ -33,7 +33,9 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://api.nuget.org/v3/index.json": {}
+        "C:\\Users\\thoma\\Coding\\Microservices\\package": {},
+        "https://api.nuget.org/v3/index.json": {},
+        "https://nuget.cloudsmith.io/labster/unity/v3/index.json": {}
       },
       "frameworks": {
         "net7.0": {
