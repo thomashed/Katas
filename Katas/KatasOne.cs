@@ -419,12 +419,12 @@ public class KatasOne
     // "aA11" -> 2 # 'a' and '1'
     public static int DuplicateTimes(string str)
     {
-        var duplicateChars = str
+        var duplicateCount = str
             .Select(c => char.IsUpper(c) ? char.ToLower(c) : c)
             .GroupBy(c => c)
-            .Where(grouping => grouping.Count() > 1);
+            .Count(chars => chars.Count() > 1);
         
-        return duplicateChars.Count();
+        return duplicateCount;
     }
 
 }
