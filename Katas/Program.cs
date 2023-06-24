@@ -27,9 +27,9 @@ var string1 = "ab";
 var string2 = "PassW0rd";
 var items = new List<object>() {"bla","bla",3,4,5,"bla"};
 
-var test = KatasOne.IsCharsOpposite("aBcd", "AbCD");
+var test = KatasOne.DuplicateTimes("aA11");
 
-Console.WriteLine("Program Expects: " + "true");
+Console.WriteLine("Program Expects: " + "2");
 Console.WriteLine("Program got: " + test);
 
 
