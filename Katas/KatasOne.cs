@@ -417,7 +417,7 @@ public class KatasOne
     }
     
     public static int DuplicateTimes(string str) => str
-            .Select(c => char.IsUpper(c) ? char.ToLower(c) : c)
+            .ToLower()
             .GroupBy(c => c)
             .Count(chars => chars.Count() > 1);
 
