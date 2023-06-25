@@ -421,9 +421,24 @@ public class KatasOne
             .GroupBy(c => c)
             .Count(chars => chars.Count() > 1);
 
+    
+    
     public static int[] ValidateBet(int N, int M, string text)
     {
-        return null;
+        var validBet = text.All(c => char.IsNumber(c) || c == ',' || c == ' ');
+        
+        if (validBet)
+        {
+            var temp = text
+                .Where(c => char.IsNumber(c))
+                .Select(c => (int)char.GetNumericValue(c))
+                .Order();
+            return temp.ToArray();
+        }
+        else
+        {
+            return null;
+        }
     }
     
 }

@@ -27,12 +27,15 @@ var string1 = "ab";
 var string2 = "PassW0rd";
 var items = new List<object>() {"bla","bla",3,4,5,"bla"};
 
-var test = KatasOne.DuplicateTimes("aA11");
+var test = KatasOne.ValidateBet(5, 90, "5 , 3, 1  4,2");
 
-Console.WriteLine("Program Expects: " + "2");
+Console.WriteLine("Program Expects: " + "new int[] {1, 2, 3, 4, 5}");
 Console.WriteLine("Program got: " + test);
 
-
+foreach (var number in test)
+{
+    Console.WriteLine("Program got: " + number);
+}
 
 
 
