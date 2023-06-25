@@ -425,15 +425,13 @@ public class KatasOne
     
     public static int[] ValidateBet(int N, int M, string text)
     {
-        var validBet = text.All(c => char.IsNumber(c) || c is ',' or ' ');
-        
-        if (validBet)
+        if (text.All(c => char.IsNumber(c) || c is ',' or ' '))
         {
-            var temp = text
+            return text
                 .Where(c => char.IsNumber(c))
                 .Select(c => (int)char.GetNumericValue(c))
-                .Order();
-            return temp.ToArray();
+                .Order()
+                .ToArray();
         }
         else
         {
