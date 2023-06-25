@@ -428,15 +428,13 @@ public class KatasOne
         if (text.All(c => char.IsNumber(c) || c is ',' or ' '))
         {
             return text
-                .Where(c => char.IsNumber(c))
+                .Where(char.IsNumber)
                 .Select(c => (int)char.GetNumericValue(c))
                 .Order()
                 .ToArray();
         }
-        else
-        {
-            return null;
-        }
+        
+        return null; 
     }
     
 }
