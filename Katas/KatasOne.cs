@@ -421,6 +421,11 @@ public class KatasOne
             .GroupBy(c => c)
             .Count(chars => chars.Count() > 1);
 
+    public static int[] ValidateBet(int N, int M, string text)
+    {
+        return null;
+    }
+    
 }
 
 
