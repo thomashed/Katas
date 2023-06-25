@@ -425,7 +425,7 @@ public class KatasOne
     
     public static int[] ValidateBet(int N, int M, string text)
     {
-        var validBet = text.All(c => char.IsNumber(c) || c == ',' || c == ' ');
+        var validBet = text.All(c => char.IsNumber(c) || c is ',' or ' ');
         
         if (validBet)
         {
