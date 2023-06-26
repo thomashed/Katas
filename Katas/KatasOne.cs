@@ -441,16 +441,13 @@ public class KatasOne
     // string.Join(".", name.Split(' ').Select(s => s[0]).ToArray()).ToUpper();
     public static string SpinWords(string sentence)
     {
-        var words = sentence.Split(' ');
-        words.Where(s => s.Length >= 5).Select(s => s.Reverse());
-
-        var reversed = string.Join(' ',sentence.Split(' ').Select(s =>
+        var revisedSentence = string.Join(' ',sentence.Split(' ').Select(s =>
         {
             if (s.Length >= 5)
             {
-                var asChar = s.ToCharArray();
-                Array.Reverse(asChar);
-                return new string(asChar);    
+                var wordToReverse = s.ToCharArray();
+                Array.Reverse(wordToReverse);
+                return new string(wordToReverse);    
             }
             else
             {
@@ -458,7 +455,7 @@ public class KatasOne
             }
         }));
 
-        return reversed;
+        return revisedSentence;
     }
     
     
