@@ -437,6 +437,12 @@ public class KatasOne
         return null; 
     }
     
+    public static string SpinWords(string sentence)
+    {
+        throw new NotImplementedException();
+    }
+    
+    
 }
 
 
