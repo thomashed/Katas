@@ -458,6 +458,11 @@ public class KatasOne
         return revisedSentence;
     }
     
+    public static int FindOdd(int[] seq)
+    {
+        throw new NotImplementedException();
+    }
+    
     
 }
 
