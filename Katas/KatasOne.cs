@@ -459,15 +459,12 @@ public class KatasOne
     }
     
     // 1,2,2,3,3,3,4,3,3,3,2,2,1 --> 4
-    public static int FindOdd(int[] seq)
-    {
-        return seq
+    public static int FindOdd(int[] seq) => seq
             .GroupBy(i => i)
             .Single(ints => ints.Count() % 2 != 0)
             .Key;
-    }
-    
-    
+
+
 }
 
 
