@@ -458,9 +458,11 @@ public class KatasOne
         return revisedSentence;
     }
     
+    // 1,2,2,3,3,3,4,3,3,3,2,2,1 --> 4
     public static int FindOdd(int[] seq)
     {
-        throw new NotImplementedException();
+        var oddOneOut = seq.GroupBy(i => i).Single(ints => ints.Count() % 2 != 0);
+        return oddOneOut.Key;
     }
     
     
