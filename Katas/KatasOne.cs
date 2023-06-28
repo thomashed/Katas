@@ -464,9 +464,15 @@ public class KatasOne
             .Single(ints => ints.Count() % 2 != 0)
             .Key;
 
+    // new int[] {1, 2, 3, 4, 5, 6, 7, 8, 9, 0}) // => returns "(123) 456-7890"
     public static string CreatePhoneNumber(int[] numbers)
     {
-        throw new NotImplementedException();
+        var phoneNumber = new string($"(" +
+                              $"{numbers[0]}{numbers[1]}{numbers[2]}) " +
+                              $"{numbers[3]}{numbers[4]}{numbers[5]}-" +
+                              $"{numbers[6]}{numbers[7]}{numbers[8]}{numbers[9]}");
+
+        return phoneNumber;
     }
     
 
