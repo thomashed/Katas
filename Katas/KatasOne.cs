@@ -467,11 +467,12 @@ public class KatasOne
     // new int[] {1, 2, 3, 4, 5, 6, 7, 8, 9, 0}) // => returns "(123) 456-7890"
     public static string CreatePhoneNumber(int[] numbers)
     {
-        var phoneNumber = new string($"(" +
-                              $"{numbers[0]}{numbers[1]}{numbers[2]}) " +
-                              $"{numbers[3]}{numbers[4]}{numbers[5]}-" +
-                              $"{numbers[6]}{numbers[7]}{numbers[8]}{numbers[9]}");
-
+        var numberAsString = string.Join("", numbers);
+        var phoneNumber = 
+            $"({numberAsString.Substring(0,3)}) " +
+            $"{numberAsString.Substring(3,3)}-" +
+            $"{numberAsString.Substring(6,4)}";
+        
         return phoneNumber;
     }
     
