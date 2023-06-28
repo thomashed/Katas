@@ -464,6 +464,11 @@ public class KatasOne
             .Single(ints => ints.Count() % 2 != 0)
             .Key;
 
+    public static string CreatePhoneNumber(int[] numbers)
+    {
+        throw new NotImplementedException();
+    }
+    
 
 }
 
