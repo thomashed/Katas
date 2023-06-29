@@ -479,32 +479,19 @@ public class KatasOne
     // ["Alex", "Jacob", "Mark", "Max"]  -->  "Alex, Jacob and 2 others like this"
     public static string Likes(string[] name)
     {
-        var sentence = "";
-        var manyLikes = "others like this";
-        var twoOrThreeLikes = "like this";
-        var singleLike = "likes this";
-        var noLikes = "no one likes this";
-
         switch (name.Length)
         {
-            case > 3:
-                sentence = $"{name.ElementAt(0)}, {name.ElementAt(1)} and {name.Length - 2} {manyLikes}";
-                break;
-            case 3:
-                sentence = $"{name.ElementAt(0)}, {name.ElementAt(1)} and {name.ElementAt(2)} {twoOrThreeLikes}";
-                break;
-            case 2:
-                sentence = $"{name.ElementAt(0)} and {name.ElementAt(1)} {twoOrThreeLikes}";
-                break;
+            case 0:
+                return "no one likes this";
             case 1:
-                sentence = $"{name.ElementAt(0)} {singleLike}";
-                break;
+                return $"{name[0]} likes this";
+            case 2:
+                return $"{name[0]} and {name[1]} like this";
+            case 3:
+                return $"{name[0]}, {name[1]} and {name[2]} like this";
             default:
-                sentence = noLikes;
-                break;
+                return $"{name[0]}, {name[1]} and {name.Length - 2} others like this";
         }
-        
-        return sentence;
     }
     
 }
