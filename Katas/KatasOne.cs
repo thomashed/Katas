@@ -475,7 +475,11 @@ public class KatasOne
         
         return phoneNumber;
     }
-    
+
+    public static string Likes(string[] name)
+    {
+        throw new NotImplementedException();
+    }
 
 }
 
