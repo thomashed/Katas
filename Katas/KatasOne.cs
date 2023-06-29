@@ -480,28 +480,30 @@ public class KatasOne
     public static string Likes(string[] name)
     {
         var sentence = "";
-        var pluralLikes = "others like this";
+        var manyLikes = "others like this";
+        var twoOrThreeLikes = "like this";
         var singleLike = "likes this";
         var noLikes = "no one likes this";
 
-        if (name.Length > 3)
+        switch (name.Length)
         {
-            sentence = $"{name.ElementAt(0)}, {name.ElementAt(1)} and {name.Length - 2} {pluralLikes}";
-        }else if (name.Length == 3)
-        {
-            sentence = $"{name.ElementAt(0)}, {name.ElementAt(1)} and {name.ElementAt(2)} {pluralLikes}";
-        }else if (name.Length == 2)
-        {
-            sentence = $"{name.ElementAt(0)} and {name.ElementAt(1)} {pluralLikes}";
-        }else if (name.Length == 1)
-        {
-            sentence = $"{name.ElementAt(0)} {singleLike}";
+            case > 3:
+                sentence = $"{name.ElementAt(0)}, {name.ElementAt(1)} and {name.Length - 2} {manyLikes}";
+                break;
+            case 3:
+                sentence = $"{name.ElementAt(0)}, {name.ElementAt(1)} and {name.ElementAt(2)} {twoOrThreeLikes}";
+                break;
+            case 2:
+                sentence = $"{name.ElementAt(0)} and {name.ElementAt(1)} {twoOrThreeLikes}";
+                break;
+            case 1:
+                sentence = $"{name.ElementAt(0)} {singleLike}";
+                break;
+            default:
+                sentence = noLikes;
+                break;
         }
-        else
-        {
-            sentence = noLikes;
-        }
-
+        
         return sentence;
     }
     
