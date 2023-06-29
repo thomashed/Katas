@@ -476,11 +476,35 @@ public class KatasOne
         return phoneNumber;
     }
 
+    // ["Alex", "Jacob", "Mark", "Max"]  -->  "Alex, Jacob and 2 others like this"
     public static string Likes(string[] name)
     {
-        throw new NotImplementedException();
-    }
+        var sentence = "";
+        var pluralLikes = "others like this";
+        var singleLike = "likes this";
+        var noLikes = "no one likes this";
 
+        if (name.Length > 3)
+        {
+            sentence = $"{name.ElementAt(0)}, {name.ElementAt(1)} and {name.Length - 2} {pluralLikes}";
+        }else if (name.Length == 3)
+        {
+            sentence = $"{name.ElementAt(0)}, {name.ElementAt(1)} and {name.ElementAt(2)} {pluralLikes}";
+        }else if (name.Length == 2)
+        {
+            sentence = $"{name.ElementAt(0)} and {name.ElementAt(1)} {pluralLikes}";
+        }else if (name.Length == 1)
+        {
+            sentence = $"{name.ElementAt(0)} {singleLike}";
+        }
+        else
+        {
+            sentence = noLikes;
+        }
+
+        return sentence;
+    }
+    
 }
 
 
