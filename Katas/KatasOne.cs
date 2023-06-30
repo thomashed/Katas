@@ -494,14 +494,11 @@ public class KatasOne
         }
     }
     
-    public static string Disemvowel(string str)
-    {
-        return new string(str
+    public static string Disemvowel(string str) => new string(str
             .Where(c => !"AEIOUaeiou"
                 .Contains(c))
             .ToArray());
-    }
-    
+
 }
 
 
