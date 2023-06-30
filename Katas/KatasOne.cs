@@ -496,9 +496,10 @@ public class KatasOne
     
     public static string Disemvowel(string str)
     {
-        var vowels = "AEIOUaeiou";
-        var strippedSentence = str.Where(c => !vowels.Contains(c));
-        return new string(strippedSentence.ToArray());
+        return new string(str
+            .Where(c => !"AEIOUaeiou"
+                .Contains(c))
+            .ToArray());
     }
     
 }
