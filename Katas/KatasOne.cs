@@ -494,6 +494,11 @@ public class KatasOne
         }
     }
     
+    public static string Disemvowel(string str)
+    {
+        throw new NotImplementedException();
+    }
+    
 }
 
 
