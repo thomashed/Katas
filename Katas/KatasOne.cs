@@ -498,6 +498,11 @@ public class KatasOne
             .Where(c => !"AEIOUaeiou"
                 .Contains(c))
             .ToArray());
+    
+    public static string HighAndLow(string numbers)
+    {
+        throw new NotImplementedException();
+    }
 
 }
 
