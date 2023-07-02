@@ -501,8 +501,8 @@ public class KatasOne
     
     public static string HighAndLow(string numbers)
     {
-        var orderedNumbers = numbers.Split(' ').Order();
-        return new string(orderedNumbers.Last() + " " + orderedNumbers.First());
+        var orderedNumbers = numbers.Split().OrderDescending();
+        return new string(orderedNumbers.First() + " " + orderedNumbers.Last());
     }
 
 }
