@@ -504,6 +504,11 @@ public class KatasOne
         var orderedNumbers = numbers.Split().Select(int.Parse);
         return new string(orderedNumbers.Max() + " " + orderedNumbers.Min());
     }
+    
+    public static string GetMiddle(string s)
+    {
+        throw new NotImplementedException();
+    }
 
 }
 
