@@ -507,12 +507,10 @@ public class KatasOne
     
     // Kata.getMiddle("testing") should return "t"
     // Kata.getMiddle("middle") should return "dd"
-    public static string GetMiddle(string s)
-    {
-        return (s.Length % 2 == 0) ? 
+    public static string GetMiddle(string s) => 
+        (s.Length % 2 == 0) ? 
             s.Substring(s.Length / 2 - 1, 2) : 
             s.Substring(s.Length / 2, 1);
-    }
 
 }
 
