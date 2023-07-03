@@ -509,11 +509,9 @@ public class KatasOne
     // Kata.getMiddle("middle") should return "dd"
     public static string GetMiddle(string s)
     {
-        var middle = (s.Length % 2 == 0) ? 
-            "" + s[s.Length / 2 - 1] + s[s.Length / 2] : 
-            "" + s[s.Length / 2];
-
-        return middle;
+        return (s.Length % 2 == 0) ? 
+            s.Substring(s.Length / 2 - 1, 2) : 
+            s.Substring(s.Length / 2, 1);
     }
 
 }
