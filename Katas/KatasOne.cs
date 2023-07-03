@@ -505,9 +505,15 @@ public class KatasOne
         return new string(orderedNumbers.Max() + " " + orderedNumbers.Min());
     }
     
+    // Kata.getMiddle("testing") should return "t"
+    // Kata.getMiddle("middle") should return "dd"
     public static string GetMiddle(string s)
     {
-        throw new NotImplementedException();
+        var middle = (s.Length % 2 == 0) ? 
+            "" + s[s.Length / 2 - 1] + s[s.Length / 2] : 
+            "" + s[s.Length / 2];
+
+        return middle;
     }
 
 }
