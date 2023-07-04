@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Data;
 using System.Globalization;
 using System.Net.NetworkInformation;
 using System.Runtime.InteropServices;
@@ -509,6 +510,11 @@ public class KatasOne
         (s.Length % 2 == 0) ? 
             s.Substring(s.Length / 2 - 1, 2) : 
             s.Substring(s.Length / 2, 1);
+
+    public static String Accum(string s)
+    {
+        throw new NotImplementedException();
+    }
 
 }
 
