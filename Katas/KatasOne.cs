@@ -516,6 +516,7 @@ public class KatasOne
     // accum("cwAt") -> "C-Ww-Aaa-Tttt"
     public static String Accum(string s)
     {
+        // TODO: indexOf wouldn't work, in case we have more than 1 occurence of the same char
         var mumbling = "";
 
         foreach (var letter in s)
