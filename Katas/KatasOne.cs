@@ -525,10 +525,10 @@ public class KatasOne
             {
                 mumbling += char.ToLower(letter);
             }
+            mumbling += '-';
         }
 
-
-        return mumbling;
+        return mumbling.Substring(0, mumbling.Length - 1);
     }
 
 }
