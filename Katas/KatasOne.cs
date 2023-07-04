@@ -511,9 +511,24 @@ public class KatasOne
             s.Substring(s.Length / 2 - 1, 2) : 
             s.Substring(s.Length / 2, 1);
 
+    // accum("abcd") -> "A-Bb-Ccc-Dddd"
+    // accum("RqaEzty") -> "R-Qq-Aaa-Eeee-Zzzzz-Tttttt-Yyyyyyy"
+    // accum("cwAt") -> "C-Ww-Aaa-Tttt"
     public static String Accum(string s)
     {
-        throw new NotImplementedException();
+        var mumbling = "";
+
+        foreach (var letter in s)
+        {
+            mumbling += char.ToUpper(letter);
+            for (int i = 0; i < s.IndexOf(letter); i++)
+            {
+                mumbling += char.ToLower(letter);
+            }
+        }
+
+
+        return mumbling;
     }
 
 }
