@@ -516,15 +516,14 @@ public class KatasOne
     // accum("cwAt") -> "C-Ww-Aaa-Tttt"
     public static String Accum(string s)
     {
-        // TODO: indexOf wouldn't work, in case we have more than 1 occurence of the same char
         var mumbling = "";
 
-        foreach (var letter in s)
+        foreach (var letter in s.Select((value, i) => (value, i)))
         {
-            mumbling += char.ToUpper(letter);
-            for (int i = 0; i < s.IndexOf(letter); i++)
+            mumbling += char.ToUpper(letter.value);
+            for (int i = 0; i < letter.i; i++)
             {
-                mumbling += char.ToLower(letter);
+                mumbling += char.ToLower(letter.value);
             }
             mumbling += '-';
         }
