@@ -520,17 +520,14 @@ public class KatasOne
 
         foreach (var letter in s.Select((value, i) => (value, i)))
         {
-            mumbling += char.ToUpper(letter.value);
-            for (int i = 0; i < letter.i; i++)
-            {
-                mumbling += char.ToLower(letter.value);
-            }
+            mumbling += char.ToUpper(letter.value) + new string(letter.value, letter.i);
             mumbling += '-';
         }
 
         return mumbling.Substring(0, mumbling.Length - 1);
-    }
-
+    } 
+    
+    
 }
 
 
