@@ -511,20 +511,12 @@ public class KatasOne
             s.Substring(s.Length / 2 - 1, 2) : 
             s.Substring(s.Length / 2, 1);
 
-    // accum("abcd") -> "A-Bb-Ccc-Dddd"
-    // accum("RqaEzty") -> "R-Qq-Aaa-Eeee-Zzzzz-Tttttt-Yyyyyyy"
-    // accum("cwAt") -> "C-Ww-Aaa-Tttt"
     public static String Accum(string s)
     {
-        var mumbling = "";
-
-        foreach (var letter in s.Select((value, i) => (value, i)))
-        {
-            mumbling += char.ToUpper(letter.value) + new string(letter.value, letter.i);
-            mumbling += '-';
-        }
-
-        return mumbling.Substring(0, mumbling.Length - 1);
+        return string
+            .Join('-', s
+                .Select((letter, i) => 
+                    char.ToUpper(letter) + new string(char.ToLower(letter),i)));
     } 
     
     
