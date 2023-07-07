@@ -517,7 +517,12 @@ public class KatasOne
             .Join('-', s
                 .Select((letter, i) => 
                     char.ToUpper(letter) + new string(char.ToLower(letter),i)));
-    } 
+    }
+    
+    public static bool IsSquare(int n)
+    {
+        throw new NotImplementedException();
+    }
     
     
 }
