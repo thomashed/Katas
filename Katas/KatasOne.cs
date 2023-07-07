@@ -518,14 +518,11 @@ public class KatasOne
                 .Select((letter, i) => 
                     char.ToUpper(letter) + new string(char.ToLower(letter),i)));
     }
-    
-    public static bool IsSquare(int n)
-    {
-        var squared = Math.Sqrt(n);
-        return squared % 1 == 0;
-    }
-    
-    
+
+    public static bool IsSquare(int n) => 
+        Math.Sqrt(n) % 1 == 0;
+
+
 }
 
 
