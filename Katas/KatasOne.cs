@@ -521,7 +521,8 @@ public class KatasOne
     
     public static bool IsSquare(int n)
     {
-        throw new NotImplementedException();
+        var squared = Math.Sqrt(n);
+        return squared % 1 == 0;
     }
     
     
