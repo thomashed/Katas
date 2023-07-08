@@ -527,7 +527,7 @@ public class KatasOne
     // "GTAT" --> "CATA"
     public static string MakeComplement(string dna)
     {
-        return string.Join("", dna.Select(c =>
+        return string.Concat(dna.Select(c =>
             {
                 switch (c)
                 {
