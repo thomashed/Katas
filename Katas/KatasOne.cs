@@ -522,9 +522,27 @@ public class KatasOne
     public static bool IsSquare(int n) => 
         Math.Sqrt(n) % 1 == 0;
 
+    // In DNA strings, symbols "A" and "T" are complements of each other, as "C" and "G". 
+    // "ATTGC" --> "TAACG"
+    // "GTAT" --> "CATA"
     public static string MakeComplement(string dna)
     {
-        throw new NotImplementedException();
+        var complement = string.Join("", dna.Select(c =>
+        {
+            switch (c)
+            {
+                case 'T':
+                    return 'A';
+                case 'A':
+                    return 'T';
+                case 'C':
+                    return 'G';
+                default:
+                    return 'C';
+            }
+        }));
+
+        return complement;
     }
 
 }
