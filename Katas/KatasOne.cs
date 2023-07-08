@@ -527,22 +527,20 @@ public class KatasOne
     // "GTAT" --> "CATA"
     public static string MakeComplement(string dna)
     {
-        var complement = string.Join("", dna.Select(c =>
-        {
-            switch (c)
+        return string.Join("", dna.Select(c =>
             {
-                case 'T':
-                    return 'A';
-                case 'A':
-                    return 'T';
-                case 'C':
-                    return 'G';
-                default:
-                    return 'C';
-            }
-        }));
-
-        return complement;
+                switch (c)
+                {
+                    case 'T':
+                        return 'A';
+                    case 'A':
+                        return 'T';
+                    case 'C':
+                        return 'G';
+                    default:
+                        return 'C';
+                }
+            }));
     }
 
 }
