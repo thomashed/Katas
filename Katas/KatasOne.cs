@@ -522,6 +522,10 @@ public class KatasOne
     public static bool IsSquare(int n) => 
         Math.Sqrt(n) % 1 == 0;
 
+    public static string MakeComplement(string dna)
+    {
+        throw new NotImplementedException();
+    }
 
 }
 
