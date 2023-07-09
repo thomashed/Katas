@@ -543,9 +543,13 @@ public class KatasOne
             }));
     }
     
+    // isIsogram "Dermatoglyphics" = true
+    // isIsogram "moose" = false
+    // isIsogram "aba" = false
     public static bool IsIsogram(string str)
     {
-        throw new NotImplementedException();
+        var isIsogram = str.GroupBy(c => char.ToLower(c)).Count(chars => chars.Count() > 1);
+        return isIsogram == 0;
     }
     
 
