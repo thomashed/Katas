@@ -542,6 +542,12 @@ public class KatasOne
                 }
             }));
     }
+    
+    public static bool IsIsogram(string str)
+    {
+        throw new NotImplementedException();
+    }
+    
 
 }
 
