@@ -548,8 +548,7 @@ public class KatasOne
     // isIsogram "aba" = false
     public static bool IsIsogram(string str)
     {
-        return str.GroupBy(c => char.ToLower(c))
-            .All(chars => chars.Count() == 1);
+        return str.ToLower().Distinct().Count() == str.Length;
     }
     
 
