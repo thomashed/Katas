@@ -553,7 +553,11 @@ public class KatasOne
     
     public static int DescendingOrder(int num)
     {
-        throw new NotImplementedException();
+        return Int32.Parse(String
+            .Join("", num
+                .ToString()
+                .ToCharArray()
+                .OrderByDescending(c => c)));
     }
 
 }
