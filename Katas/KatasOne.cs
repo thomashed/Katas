@@ -551,6 +551,10 @@ public class KatasOne
         return str.ToLower().Distinct().Count() == str.Length;
     }
     
+    public static int DescendingOrder(int num)
+    {
+        throw new NotImplementedException();
+    }
 
 }
 
