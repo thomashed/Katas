@@ -559,6 +559,11 @@ public class KatasOne
                 .ToCharArray()
                 .OrderByDescending(c => c)));
     }
+    
+    public static int FindShort(string s)
+    {
+        throw new NotImplementedException();
+    }
 
 }
 
