@@ -561,11 +561,9 @@ public class KatasOne
     }
     
     // Assert.AreEqual(2, Kata.FindShort("Let's travel abroad shall we"));
-    public static int FindShort(string s)
-    {
-        var shortest = s.Split(' ').Min(s1 => s1.Length);
-        return shortest;
-    }
+    public static int FindShort(string s) => 
+        s.Split(' ').Min(s1 => s1.Length);
+    
 
 }
 
