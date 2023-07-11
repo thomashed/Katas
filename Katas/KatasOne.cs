@@ -560,7 +560,6 @@ public class KatasOne
                 .OrderByDescending(c => c)));
     }
     
-    // Assert.AreEqual(2, Kata.FindShort("Let's travel abroad shall we"));
     public static int FindShort(string s) => 
         s.Split(' ').Min(s1 => s1.Length);
     
