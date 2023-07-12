@@ -562,7 +562,11 @@ public class KatasOne
     
     public static int FindShort(string s) => 
         s.Split(' ').Min(s1 => s1.Length);
-    
+
+    public static bool XO (string input)
+    {
+        throw new NotImplementedException();
+    }
 
 }
 
