@@ -563,9 +563,21 @@ public class KatasOne
     public static int FindShort(string s) => 
         s.Split(' ').Min(s1 => s1.Length);
 
+    // XO("ooxXm") => true
+    // XO("zpzpzpp") => true // when no 'x' and 'o' is present should return true
+    // XO("zzoo") => false
     public static bool XO (string input)
     {
-        throw new NotImplementedException();
+        var inputLowered = input.ToLower();
+        var groupedChars = inputLowered
+            .Select(c => c)
+            .Where(c => c == 'c' || c == 'x')
+            .GroupBy(c => c);
+        
+        return (!inputLowered.Contains('c') && !inputLowered.Contains('x')) ||
+               (groupedChars.Count() == 2 && 
+                groupedChars.First().Count() == 
+                groupedChars.Last().Count());
     }
 
 }
