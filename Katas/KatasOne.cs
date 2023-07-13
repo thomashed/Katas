@@ -566,18 +566,25 @@ public class KatasOne
     // XO("ooxXm") => true
     // XO("zpzpzpp") => true // when no 'x' and 'o' is present should return true
     // XO("zzoo") => false
-    public static bool XO (string input)
+    public static bool XO(string input)
     {
+        var keyChars = new[]{'x','o'};
         var inputLowered = input.ToLower();
-        var groupedChars = inputLowered
-            .Select(c => c)
-            .Where(c => c == 'c' || c == 'x')
+
+        if (!inputLowered.Contains(keyChars[0]) && 
+            !inputLowered.Contains(keyChars[1]))
+        {
+            return true;
+        }
+
+        var keyCharsGrouped = inputLowered
+            .Where(keyChars.Contains)
             .GroupBy(c => c);
+
+        Console.WriteLine("---> test: " + keyCharsGrouped.Count());
         
-        return (!inputLowered.Contains('c') && !inputLowered.Contains('x')) ||
-               (groupedChars.Count() == 2 && 
-                groupedChars.First().Count() == 
-                groupedChars.Last().Count());
+        return keyCharsGrouped.Count() > 1 && 
+               keyCharsGrouped.First().Count() == keyCharsGrouped.Last().Count();
     }
 
 }
