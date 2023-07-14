@@ -591,11 +591,7 @@ public class KatasOne
     // Jaden-Cased:     "How Can Mirrors Be Real If Our Eyes Aren't Real"
     public static string ToJadenCase(string phrase)
     {
-        var startCasingUpper = phrase
-            .Split(' ')
-            .Select(s => char.ToUpper(s[0]) + s[1..]);
-        
-        return string.Join(" ", startCasingUpper);
+        return CultureInfo.CurrentCulture.TextInfo.ToTitleCase(phrase);
     }
 
 }
