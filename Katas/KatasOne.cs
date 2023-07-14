@@ -586,6 +586,11 @@ public class KatasOne
         return keyCharsGrouped.Count() > 1 && 
                keyCharsGrouped.First().Count() == keyCharsGrouped.Last().Count();
     }
+    
+    public static string ToJadenCase(string phrase)
+    {
+        throw new NotImplementedException();
+    }
 
 }
 
