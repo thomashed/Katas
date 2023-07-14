@@ -593,7 +593,7 @@ public class KatasOne
     {
         var startCasingUpper = phrase
             .Split(' ')
-            .Select(s => char.ToUpper(s[0]) + s.Substring(1));
+            .Select(s => char.ToUpper(s[0]) + s[1..]);
         
         return string.Join(" ", startCasingUpper);
     }
