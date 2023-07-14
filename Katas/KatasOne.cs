@@ -587,9 +587,15 @@ public class KatasOne
                keyCharsGrouped.First().Count() == keyCharsGrouped.Last().Count();
     }
     
+    // Not Jaden-Cased: "How can mirrors be real if our eyes aren't real"
+    // Jaden-Cased:     "How Can Mirrors Be Real If Our Eyes Aren't Real"
     public static string ToJadenCase(string phrase)
     {
-        throw new NotImplementedException();
+        var startCasingUpper = phrase
+            .Split(' ')
+            .Select(s => char.ToUpper(s[0]) + s.Substring(1));
+        
+        return string.Join(" ", startCasingUpper);
     }
 
 }
