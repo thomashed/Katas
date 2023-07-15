@@ -593,6 +593,11 @@ public class KatasOne
     {
         return CultureInfo.CurrentCulture.TextInfo.ToTitleCase(phrase);
     }
+    
+    public static int FindShortest(string s)
+    {
+        throw new NotImplementedException();
+    }
 
 }
 
