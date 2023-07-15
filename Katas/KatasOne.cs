@@ -596,7 +596,11 @@ public class KatasOne
     
     public static int FindShortest(string s)
     {
-        throw new NotImplementedException();
+        return s
+            .Split(" ")
+            .OrderBy(s1 => s1.Length)
+            .First()
+            .Length;
     }
 
 }
