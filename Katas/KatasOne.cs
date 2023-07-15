@@ -594,14 +594,9 @@ public class KatasOne
         return CultureInfo.CurrentCulture.TextInfo.ToTitleCase(phrase);
     }
     
-    public static int FindShortest(string s)
-    {
-        return s
-            .Split(" ")
-            .OrderBy(s1 => s1.Length)
-            .First()
-            .Length;
-    }
+    public static int FindShortest(string s) => 
+        s.Split(' ').OrderBy(s1 => s1.Length).First().Length;
+    
 
 }
 
