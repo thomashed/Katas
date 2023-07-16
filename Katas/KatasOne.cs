@@ -597,6 +597,10 @@ public class KatasOne
     public static int FindShortest(string s) =>
         s.Split(' ').Min(s1 => s1.Length);
 
+    public static string Maskify(string cc)
+    {
+        throw new NotImplementedException();
+    }
 
 }
 
