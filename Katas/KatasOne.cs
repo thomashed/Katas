@@ -597,9 +597,12 @@ public class KatasOne
     public static int FindShortest(string s) =>
         s.Split(' ').Min(s1 => s1.Length);
 
+    // Kata.Maskify("4556364607935616"); // should return "############5616"
     public static string Maskify(string cc)
     {
-        throw new NotImplementedException();
+        var lastFour = cc.Substring(cc.Length - 4);
+        var masked = cc.Substring(0, cc.Length - 4).Select(c => '#');
+        return string.Join("", masked) + lastFour;
     }
 
 }
