@@ -606,9 +606,21 @@ public class KatasOne
         return string.Join("", masked) + lastFour;
     }
     
-    public int GetSum(int a, int b)
+    public static int GetSum(int a, int b)
     {
-        throw new NotImplementedException();
+        if (a == b)
+        {
+            return a;
+        }
+        
+        var sum = 0;
+        
+        for (int i = int.Min(1,b); i <= int.Max(a,b); i++)
+        {
+            sum += i;
+        }
+
+        return sum;
     }
 
 }
