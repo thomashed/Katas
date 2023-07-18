@@ -624,11 +624,9 @@ public class KatasOne
     }
     
     // friend ["Ryan", "Kieran", "Mark"] `shouldBe` ["Ryan", "Mark"]
-    public static IEnumerable<string> FriendOrFoe (string[] names)
-    {
-        var filteredNames = names.Where(s => s.Length == 4);
-        return filteredNames.ToArray();
-    }
+    public static IEnumerable<string> FriendOrFoe (string[] names) => 
+        names.Where(s => s.Length == 4);
+    
 
 }
 
