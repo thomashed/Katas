@@ -623,9 +623,11 @@ public class KatasOne
         return sum;
     }
     
+    // friend ["Ryan", "Kieran", "Mark"] `shouldBe` ["Ryan", "Mark"]
     public static IEnumerable<string> FriendOrFoe (string[] names)
     {
-        throw new NotImplementedException();
+        var filteredNames = names.Where(s => s.Length == 4);
+        return filteredNames.ToArray();
     }
 
 }
