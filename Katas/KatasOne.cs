@@ -622,6 +622,11 @@ public class KatasOne
 
         return sum;
     }
+    
+    public static IEnumerable<string> FriendOrFoe (string[] names)
+    {
+        throw new NotImplementedException();
+    }
 
 }
 
