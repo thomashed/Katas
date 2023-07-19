@@ -627,6 +627,11 @@ public class KatasOne
     public static IEnumerable<string> FriendOrFoe (string[] names) => 
         names.Where(s => s.Length == 4);
     
+    public static IEnumerable<string> OpenOrSenior(int[][] data)
+    {
+        throw new NotImplementedException();
+    }
+    
 
 }
 
