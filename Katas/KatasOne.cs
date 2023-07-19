@@ -629,7 +629,21 @@ public class KatasOne
     
     public static IEnumerable<string> OpenOrSenior(int[][] data)
     {
-        throw new NotImplementedException();
+        var categories = new List<string>();
+
+        foreach (var memberInfo in data)
+        {
+            if (memberInfo[0] >= 55 && memberInfo[1] > 7)
+            {
+                categories.Add("Senior");
+            }
+            else
+            {
+                categories.Add("Open");       
+            }
+        }
+
+        return categories;
     }
     
 
