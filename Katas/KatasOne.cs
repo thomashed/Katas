@@ -635,6 +635,11 @@ public class KatasOne
                     "Senior" : "Open");
     }
     
+    public static string ReverseWords(string str)
+    {
+        throw new NotImplementedException();
+    }
+    
 
 }
 
