@@ -637,11 +637,11 @@ public class KatasOne
     
     public static string ReverseWords(string str)
     {
-        var flipped = str
+        var reversed = str
             .Split(" ")
             .Select(s => string.Join("", s.Reverse()));
 
-        return string.Join("", flipped);
+        return string.Join(" ", reversed);
     }
     
 
