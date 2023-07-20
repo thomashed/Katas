@@ -637,7 +637,11 @@ public class KatasOne
     
     public static string ReverseWords(string str)
     {
-        throw new NotImplementedException();
+        var flipped = str
+            .Split(" ")
+            .Select(s => string.Join("", s.Reverse()));
+
+        return string.Join("", flipped);
     }
     
 
