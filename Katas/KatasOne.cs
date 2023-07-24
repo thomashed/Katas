@@ -650,9 +650,7 @@ public class KatasOne
         }
         
         var filteredNumbers = numbers;
-        var lowest = filteredNumbers.Min();
-        filteredNumbers.Remove(lowest);
-
+        filteredNumbers.Remove(numbers.Min());
         return filteredNumbers;
     }
 
