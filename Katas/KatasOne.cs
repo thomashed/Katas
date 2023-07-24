@@ -644,7 +644,16 @@ public class KatasOne
 
     public static List<int> RemoveSmallest(List<int> numbers)
     {
-        throw new NotImplementedException();
+        if (numbers.Count == 0)
+        {
+            return numbers;
+        }
+        
+        var filteredNumbers = numbers;
+        var lowest = filteredNumbers.Min();
+        filteredNumbers.Remove(lowest);
+
+        return filteredNumbers;
     }
 
 }
