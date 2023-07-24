@@ -641,7 +641,11 @@ public class KatasOne
             .Split(" ")
             .Select(s => new string(s.Reverse().ToArray())));
     }
-    
+
+    public static List<int> RemoveSmallest(List<int> numbers)
+    {
+        throw new NotImplementedException();
+    }
 
 }
 
