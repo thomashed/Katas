@@ -653,6 +653,11 @@ public class KatasOne
         filteredNumbers.Remove(numbers.Min());
         return filteredNumbers;
     }
+    
+    public static int BreakChocolate(int n, int m) 
+    {
+        return n * m - 1;
+    }
 
 }
 

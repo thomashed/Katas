@@ -27,15 +27,21 @@ var string1 = "ab";
 var string2 = "PassW0rd";
 var items = new List<object>() {"bla","bla",3,4,5,"bla"};
 
-var test = KatasOne.ValidateBet(5, 90, "5 , 3, 1  4,2");
+var arg1 = new[] { new[] { 45, 12 }, new[] { 55, 21 }, new[] { 19, 2 }, new[] { 104, 20 } };
+var arg2 = "This is an example!";
+var arg3 = new[] {1,2,3,4,5};
+var test = KatasOne.RemoveSmallest(arg3.ToList());
 
-Console.WriteLine("Program Expects: " + "new int[] {1, 2, 3, 4, 5}");
-Console.WriteLine("Program got: " + test);
+Console.WriteLine("Program Expects: " + "sihT si na !elpmaxe");
+Console.WriteLine("Program got Count: " + test.Count);
 
-foreach (var number in test)
+foreach (var name in test)
 {
-    Console.WriteLine("Program got: " + number);
+    Console.Write(name);
 }
+
+
+
 
 
 
