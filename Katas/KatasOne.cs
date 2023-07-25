@@ -656,7 +656,7 @@ public class KatasOne
     
     public static int BreakChocolate(int n, int m) 
     {
-        return n * m - 1;
+        return (n == 0 || m == 0) ? n * m - 1 : 0;
     }
 
 }
