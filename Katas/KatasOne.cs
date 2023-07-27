@@ -660,11 +660,10 @@ public class KatasOne
     }
     
     // coDe
-    public static string Solve(string s)
-    {
-        return (s.Count(char.IsLower) >= s.Count(char.IsUpper)) ? 
+    public static string Solve(string s) => 
+        (s.Count(char.IsLower) >= s.Count(char.IsUpper)) ? 
             s.ToLower() : s.ToUpper();
-    }
+    
 
 }
 
