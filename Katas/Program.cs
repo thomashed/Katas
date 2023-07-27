@@ -30,15 +30,15 @@ var items = new List<object>() {"bla","bla",3,4,5,"bla"};
 var arg1 = new[] { new[] { 45, 12 }, new[] { 55, 21 }, new[] { 19, 2 }, new[] { 104, 20 } };
 var arg2 = "This is an example!";
 var arg3 = new[] {1,2,3,4,5};
-var test = KatasOne.RemoveSmallest(arg3.ToList());
+var test = KatasOne.Solve("coDe");
 
-Console.WriteLine("Program Expects: " + "sihT si na !elpmaxe");
-Console.WriteLine("Program got Count: " + test.Count);
+Console.WriteLine("Program Expects: " + "code");
+Console.WriteLine("Program got Count: " + test);
 
-foreach (var name in test)
-{
-    Console.Write(name);
-}
+// foreach (var name in test)
+// {
+//     Console.Write(name);
+// }
 
 
 

@@ -659,9 +659,15 @@ public class KatasOne
         return n * m > 0 ? n * m - 1 : 0;
     }
     
+    // coDe
     public static string Solve(string s)
     {
-        throw new NotImplementedException();
+        var caseGrouping = s
+            .GroupBy(char.IsLower)
+            .Select(group => string.Join("", group));
+        
+        return (caseGrouping.ElementAt(0).Length >= caseGrouping.ElementAt(1).Length) ? 
+            s.ToLower() : s.ToUpper();
     }
 
 }
