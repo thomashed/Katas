@@ -30,7 +30,7 @@ var items = new List<object>() {"bla","bla",3,4,5,"bla"};
 var arg1 = new[] { new[] { 45, 12 }, new[] { 55, 21 }, new[] { 19, 2 }, new[] { 104, 20 } };
 var arg2 = "This is an example!";
 var arg3 = new[] {1,2,3,4,5};
-var test = KatasOne.Solve("coDe");
+var test = KatasOne.Solve("CODe");
 
 Console.WriteLine("Program Expects: " + "code");
 Console.WriteLine("Program got Count: " + test);

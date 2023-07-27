@@ -662,12 +662,10 @@ public class KatasOne
     // coDe
     public static string Solve(string s)
     {
-        var caseGrouping = s
-            .GroupBy(char.IsLower)
-            .Select(group => string.Join("", group));
-        
-        return (caseGrouping.ElementAt(0).Length >= caseGrouping.ElementAt(1).Length) ? 
-            s.ToLower() : s.ToUpper();
+        var lowerCase = string.Join("", s.Where(char.IsLower));
+        var upperCase = string.Join("", s.Where(char.IsUpper));
+
+        return lowerCase.Count() >= upperCase.Count() ? s.ToLower() : s.ToUpper();
     }
 
 }
