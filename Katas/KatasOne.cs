@@ -658,6 +658,11 @@ public class KatasOne
     {
         return n * m > 0 ? n * m - 1 : 0;
     }
+    
+    public static string Solve(string s)
+    {
+        throw new NotImplementedException();
+    }
 
 }
 
