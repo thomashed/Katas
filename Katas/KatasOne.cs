@@ -662,10 +662,8 @@ public class KatasOne
     // coDe
     public static string Solve(string s)
     {
-        var lowerCase = string.Join("", s.Where(char.IsLower));
-        var upperCase = string.Join("", s.Where(char.IsUpper));
-
-        return lowerCase.Count() >= upperCase.Count() ? s.ToLower() : s.ToUpper();
+        return (s.Count(char.IsLower) >= s.Count(char.IsUpper)) ? 
+            s.ToLower() : s.ToUpper();
     }
 
 }
