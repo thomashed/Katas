@@ -664,6 +664,10 @@ public class KatasOne
         (s.Count(char.IsLower) >= s.Count(char.IsUpper)) ? 
             s.ToLower() : s.ToUpper();
     
+    public static int NbDig(int n, int d)
+    {
+        throw new NotImplementedException();
+    }
 
 }
 
