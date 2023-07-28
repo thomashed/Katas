@@ -664,9 +664,19 @@ public class KatasOne
         (s.Count(char.IsLower) >= s.Count(char.IsUpper)) ? 
             s.ToLower() : s.ToUpper();
     
-    public static int NbDig(int n, int d)
+    // string s="aaaaaaaaaaaaaaaabbbbbbbbbbbbbbbbbbmmmmmmmmmmmmmmmmmmmxyz";
+    // Assert.AreEqual("3/56", Printer.PrinterError(s));
+    public static string PrinterError(String s)
     {
-        throw new NotImplementedException();
+        // TODO: we're using the wrong version of Select in this case
+        var invalidCharCounter = s.Select((c, i) => !"abcdefghijklm".Contains(c) ? i++ : i);
+
+        foreach (var VARIABLE in invalidCharCounter)
+        {
+            Console.WriteLine("test --> " + VARIABLE);
+        }
+        
+        return $"{invalidCharCounter.ToArray().Length}/{s.Length}";
     }
 
 }
