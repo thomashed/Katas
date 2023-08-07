@@ -679,6 +679,15 @@ public class KatasOne
         return $"{invalidCharCounter.ToArray().Length}/{s.Length}";
     }
 
+    // "This is an example!" ==> "sihT si na !elpmaxe"
+    // "double  spaces"      ==> "elbuod  secaps"
+    public static string ReverseWords2(string str)
+    {
+        throw new NotImplementedException();
+    }
+    
+    
+    
 }
 
 
