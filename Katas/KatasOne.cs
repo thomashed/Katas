@@ -683,7 +683,8 @@ public class KatasOne
     // "double  spaces"      ==> "elbuod  secaps"
     public static string ReverseWords2(string str)
     {
-        throw new NotImplementedException();
+        return string.Join(" ", str.Split(" ")
+            .Select(s => string.Join("", s.Reverse())));
     }
     
     
