@@ -689,7 +689,11 @@ public class KatasOne
 
     public static int DescendingOrder2(int num)
     {
-        throw new NotImplementedException();
+        var orderedNumbers = string.Join("", num.ToString()
+            .ToArray()
+            .OrderDescending());
+        
+        return Int32.Parse(orderedNumbers);
     }
     
     
