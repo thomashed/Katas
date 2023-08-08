@@ -686,6 +686,11 @@ public class KatasOne
         return string.Join(" ", str.Split(" ")
             .Select(s => string.Join("", s.Reverse())));
     }
+
+    public static int DescendingOrder2(int num)
+    {
+        throw new NotImplementedException();
+    }
     
     
     
