@@ -696,7 +696,10 @@ public class KatasOne
         return Int32.Parse(orderedNumbers);
     }
     
-    
+    public static int SequenceSum(int start, int end, int step)
+    {
+        throw new NotImplementedException();
+    }    
     
 }
 
