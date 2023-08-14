@@ -726,9 +726,8 @@ public class KatasOne
     // HighAndLow("1 9 3 4 -5"); // return "9 -5"
     public static string HighAndLow2(string numbers)
     {
-
-
-        throw new NotImplementedException();
+        var splitNumbers = numbers.Split(" ");
+        return $"{splitNumbers.Max()} {splitNumbers.Min()}";
     }
     
 }
