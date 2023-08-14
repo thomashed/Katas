@@ -721,6 +721,16 @@ public class KatasOne
         return sequenceSum == end ? sequenceSum + end : sequenceSum;
     }    
     
+    // HighAndLow("1 2 3 4 5");  // return "5 1"
+    // HighAndLow("1 2 -3 4 5"); // return "5 -3"
+    // HighAndLow("1 9 3 4 -5"); // return "9 -5"
+    public static string HighAndLow2(string numbers)
+    {
+
+
+        throw new NotImplementedException();
+    }
+    
 }
 
 
