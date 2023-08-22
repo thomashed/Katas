@@ -733,7 +733,8 @@ public class KatasOne
     
     public static string SpinWords2(string sentence)
     {
-        throw new NotImplementedException();
+        var reversedWords = sentence.Split(" ").Select(s => s.Length >= 5 ? s.Reverse() : s);
+        return string.Join("", reversedWords);
     }
     
 }
