@@ -735,7 +735,7 @@ public class KatasOne
     {
         Console.WriteLine($"--> test: {sentence}");
         var reversedWords = sentence.Split(" ").Select(s => s.Length >= 5 ? String.Join("", s.Reverse()) : s);
-        return string.Join("", reversedWords);
+        return string.Join(" ", reversedWords);
     }
     
 }
