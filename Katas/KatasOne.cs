@@ -731,6 +731,11 @@ public class KatasOne
         return $"{splitNumbers.Max()} {splitNumbers.Min()}";
     }
     
+    public static string SpinWords2(string sentence)
+    {
+        throw new NotImplementedException();
+    }
+    
 }
 
 
