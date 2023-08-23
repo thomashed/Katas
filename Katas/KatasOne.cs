@@ -739,6 +739,11 @@ public class KatasOne
         return string.Join(" ", reversedWords);
     }
     
+    public static int DigitalRoot(long n)
+    {
+        throw new NotImplementedException();
+    }
+    
 }
 
 
