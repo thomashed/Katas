@@ -759,6 +759,11 @@ public class KatasOne
         return sum > 9 ? DigitalRoot(sum) : sum;
     }
     
+    public static int[] ArrayDiff(int[] a, int[] b)
+    {
+        throw new NotImplementedException();
+    }
+    
 }
 
 
