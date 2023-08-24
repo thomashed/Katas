@@ -739,16 +739,8 @@ public class KatasOne
         return string.Join(" ", reversedWords);
     }
     
-    // 16  -->  1 + 6 = 7
-    // 942  -->  9 + 4 + 2 = 15  -->  1 + 5 = 6
     public static int DigitalRoot(long n)
     {
-        // break down n
-        // parse back to individual ints
-        // sum them
-        // repeat until sum < 10
-
-        // TODO: check for parsing in a better way
         var splitNumbers = n
             .ToString()
             .ToCharArray()
