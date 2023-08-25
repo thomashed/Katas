@@ -761,10 +761,10 @@ public class KatasOne
         var grouped = integers.GroupBy(i => i % 2 == 0);
         
         var oddOneOut = grouped
-            .Where(group => group.Count() == 1)
-            .SelectMany(ints => ints);
+            .Single(group => group.Count() == 1)
+            .First();
 
-        return oddOneOut.First();
+        return oddOneOut;
     }
     
 }
