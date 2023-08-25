@@ -756,6 +756,11 @@ public class KatasOne
         return a.Where(i => !b.Contains(i)).ToArray();
     }
     
+    public static int FindOutlier(int[] integers)
+    {
+        throw new NotImplementedException();
+    }
+    
 }
 
 
