@@ -753,7 +753,7 @@ public class KatasOne
     
     public static int[] ArrayDiff(int[] a, int[] b)
     {
-        throw new NotImplementedException();
+        return a.Where(i => !b.Contains(i)).ToArray();
     }
     
 }
