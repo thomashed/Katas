@@ -758,7 +758,13 @@ public class KatasOne
     
     public static int FindOutlier(int[] integers)
     {
-        throw new NotImplementedException();
+        var grouped = integers.GroupBy(i => i % 2 == 0);
+        
+        var oddOneOut = grouped
+            .Where(group => group.Count() == 1)
+            .SelectMany(ints => ints);
+
+        return oddOneOut.First();
     }
     
 }
