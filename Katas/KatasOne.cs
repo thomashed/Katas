@@ -766,6 +766,11 @@ public class KatasOne
         return oddOneOut != null ? oddOneOut.First() : -1;
     }
     
+    public static string DuplicateEncode(string word)
+    {
+        throw new NotImplementedException();
+    }
+    
     
     
 }
