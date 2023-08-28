@@ -772,9 +772,8 @@ public class KatasOne
     public static string DuplicateEncode(string word)
     {
         var toLower = word.ToLower();
-        var encoded = toLower.Select(c1 => toLower.Count(c2 => c2 == c1) > 1 ? ')' : '(');
-        
-        return string.Join("", encoded);
+        return string.Join("", toLower
+            .Select(c1 => toLower.Count(c2 => c2 == c1) > 1 ? ')' : '('));
     }
     
     
