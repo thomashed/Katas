@@ -766,9 +766,15 @@ public class KatasOne
         return oddOneOut != null ? oddOneOut.First() : -1;
     }
     
+    // "Success"  =>  ")())())"
+    // t a string to a new string where each character in the new string is
+    // "(" if that character appears only once in the original string, or ")" if that character appears more than once 
     public static string DuplicateEncode(string word)
     {
-        throw new NotImplementedException();
+        var toLower = word.ToLower();
+        var encoded = toLower.Select(c1 => toLower.Count(c2 => c2 == c1) > 1 ? ')' : '(');
+        
+        return string.Join("", encoded);
     }
     
     
