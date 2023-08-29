@@ -782,7 +782,30 @@ public class KatasOne
     // Assert.AreEqual(false, Kata.IsValidWalk(new string[] {"n","n","n","s","n","s","n","s","n","s"}), "should return false");
     public static bool IsValidWalk(string[] walk)
     {
-        throw new NotImplementedException();
+        var verDir = 1;
+        var horDir = 1;
+        var completeRoute = 0;
+
+        foreach (var route in walk)
+        {
+            switch (route) // TODO: use switch expression?
+            {
+                case "n":
+                    completeRoute += verDir;
+                    break;
+                case "e":
+                    completeRoute += horDir;
+                    break;
+                case "s":
+                    completeRoute -= verDir;
+                    break;
+                default:
+                    completeRoute -= horDir;
+                    break;
+            }
+        }
+        
+        return completeRoute == 0 && walk.Length == 10;
     }
     
     
