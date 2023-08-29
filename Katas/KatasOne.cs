@@ -776,6 +776,15 @@ public class KatasOne
             .Select(c1 => toLower.Count(c2 => c2 == c1) > 1 ? ')' : '('));
     }
     
+    // Assert.AreEqual(true, Kata.IsValidWalk(new string[] {"n","s","n","s","n","s","n","s","n","s"}), "should return true");
+    // Assert.AreEqual(false, Kata.IsValidWalk(new string[] {"w","e","w","e","w","e","w","e","w","e","w","e"}), "should return false");
+    // Assert.AreEqual(false, Kata.IsValidWalk(new string[] {"w"}), "should return false");
+    // Assert.AreEqual(false, Kata.IsValidWalk(new string[] {"n","n","n","s","n","s","n","s","n","s"}), "should return false");
+    public static bool IsValidWalk(string[] walk)
+    {
+        throw new NotImplementedException();
+    }
+    
     
     
 }
