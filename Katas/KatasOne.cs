@@ -806,7 +806,7 @@ public class KatasOne
             }
         }
         
-        return completeRouteVer == 0 && completeRouteHor == 0 && walk.Length == 10;
+        return (completeRouteVer + completeRouteHor) == 0 && walk.Length == 10;
     }
     
     
