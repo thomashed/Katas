@@ -784,28 +784,29 @@ public class KatasOne
     {
         var verDir = 1;
         var horDir = 1;
-        var completeRoute = 0;
+        var completeRouteVer = 0;
+        var completeRouteHor = 0;
 
         foreach (var route in walk)
         {
             switch (route) // TODO: use switch expression?
             {
                 case "n":
-                    completeRoute += verDir;
+                    completeRouteVer += verDir;
                     break;
                 case "e":
-                    completeRoute += horDir;
+                    completeRouteHor += horDir;
                     break;
                 case "s":
-                    completeRoute -= verDir;
+                    completeRouteVer -= verDir;
                     break;
                 default:
-                    completeRoute -= horDir;
+                    completeRouteHor -= horDir;
                     break;
             }
         }
         
-        return completeRoute == 0 && walk.Length == 10;
+        return completeRouteVer == 0 && completeRouteHor == 0 && walk.Length == 10;
     }
     
     
