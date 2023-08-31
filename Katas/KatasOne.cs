@@ -794,6 +794,10 @@ public class KatasOne
         return completeRoute == 0;
     }
     
+    public static string AlphabetPosition(string text)
+    {
+        throw new NotImplementedException();
+    }
     
     
 }
