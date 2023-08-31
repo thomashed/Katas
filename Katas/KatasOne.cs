@@ -766,9 +766,6 @@ public class KatasOne
         return oddOneOut != null ? oddOneOut.First() : -1;
     }
     
-    // "Success"  =>  ")())())"
-    // t a string to a new string where each character in the new string is
-    // "(" if that character appears only once in the original string, or ")" if that character appears more than once 
     public static string DuplicateEncode(string word)
     {
         var toLower = word.ToLower();
@@ -776,10 +773,6 @@ public class KatasOne
             .Select(c1 => toLower.Count(c2 => c2 == c1) > 1 ? ')' : '('));
     }
     
-    // Assert.AreEqual(true, Kata.IsValidWalk(new string[] {"n","s","n","s","n","s","n","s","n","s"}), "should return true");
-    // Assert.AreEqual(false, Kata.IsValidWalk(new string[] {"w","e","w","e","w","e","w","e","w","e","w","e"}), "should return false");
-    // Assert.AreEqual(false, Kata.IsValidWalk(new string[] {"w"}), "should return false");
-    // Assert.AreEqual(false, Kata.IsValidWalk(new string[] {"n","n","n","s","n","s","n","s","n","s"}), "should return false");
     public static bool IsValidWalk(string[] walk)
     {
         if (walk.Length != 10) return false;
