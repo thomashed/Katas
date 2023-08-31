@@ -796,7 +796,13 @@ public class KatasOne
     
     public static string AlphabetPosition(string text)
     {
-        throw new NotImplementedException();
+        var alphabetPositions = text
+            .Replace(" ","")
+            .ToUpper()
+            .Select(c => char
+                .IsAsciiLetter(c) ? (c - 64) + " "  : " ");
+
+        return string.Join("", alphabetPositions);
     }
     
     
