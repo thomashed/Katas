@@ -805,6 +805,10 @@ public class KatasOne
         return string.Join("", alphabetPositions);
     }
     
+    public static int Persistence(long n)
+    {
+        throw new NotImplementedException();
+    }
     
 }
 
