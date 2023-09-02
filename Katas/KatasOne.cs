@@ -1,7 +1,9 @@
 using System.Collections;
+using System.Collections.Specialized;
 using System.Data;
 using System.Globalization;
 using System.Net.NetworkInformation;
+using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 using System.Security.Authentication.ExtendedProtection;
 using System.Text.RegularExpressions;
@@ -807,8 +809,20 @@ public class KatasOne
     
     public static int Persistence(long n)
     {
-        throw new NotImplementedException();
+        var counter = 0;
+
+        while (n > 9)
+        {
+            counter++;
+            n = n.ToString().Select(c => int.Parse(c.ToString())).Aggregate((i1, i2) => i1 * i2);
+        }
+        
+        return counter;
     }
+    
+    
+    
+    
     
 }
 
