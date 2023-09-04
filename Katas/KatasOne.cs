@@ -819,6 +819,14 @@ public class KatasOne
         
         return counter;
     }
+
+    public static int Persistence2(long n)
+    {
+
+
+        throw new NotImplementedException();
+    }
+    
     
     
     
