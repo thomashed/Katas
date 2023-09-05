@@ -819,8 +819,6 @@ public class KatasOne
         
         return counter;
     }
-
-    
     
     
     // 39 --> 3 (because 3*9 = 27, 2*7 = 14, 1*4 = 4 and 4 has only one digit)
@@ -828,20 +826,13 @@ public class KatasOne
     // 4 --> 0 (because 4 is already a one-digit number)
     public static int Persistence2(long n)
     {
-        var parsedNumber = n.ToString();
         var counter = 0;
-        var sum = n;
-
-        while (sum > 9)
+        
+        while (n > 9)
         {
-            sum = parsedNumber
-                .Select(c => int.Parse(c.ToString()))
-                .Aggregate((i1, i2) =>
-                {
-                    counter++;
-                    return i1 * i2;
-                });
-            parsedNumber = sum.ToString();
+            var parsedNumber = n.ToString().ToCharArray();
+            n = parsedNumber.Select(c => int.Parse(c.ToString())).Aggregate((i1, i2) => i1 * i2);
+            counter++;
         }
         
         return counter;
