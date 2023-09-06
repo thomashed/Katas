@@ -839,13 +839,15 @@ public class KatasOne
 //    ""  -->  ""
     public static string Order(string words)
     {
+        if (string.IsNullOrEmpty(words)) return "";
+
         var pattern = @"\d+";
         
         var order = words
             .Split(" ")
             .OrderBy(s => int.
                 Parse(Regex.Match(s, pattern).Value));
-
+        
         return string.Join(" ", order);
     }
 
