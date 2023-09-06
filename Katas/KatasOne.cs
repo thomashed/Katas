@@ -833,12 +833,17 @@ public class KatasOne
         
         return counter;
     }
-    
-    
-    
-    
-    
-    
+
+    public static string Order(string words)
+    {
+        throw new NotImplementedException();
+    }
+
+
+
+
+
+
 }
 
 
