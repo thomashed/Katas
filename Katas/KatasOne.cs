@@ -834,9 +834,19 @@ public class KatasOne
         return counter;
     }
 
+//    "is2 Thi1s T4est 3a"  -->  "Thi1s is2 3a T4est"
+//    "4of Fo1r pe6ople g3ood th5e the2"  -->  "Fo1r the2 g3ood 4of th5e pe6ople"
+//    ""  -->  ""
     public static string Order(string words)
     {
-        throw new NotImplementedException();
+        var pattern = @"\d+";
+        
+        var order = words
+            .Split(" ")
+            .OrderBy(s => int.
+                Parse(Regex.Match(s, pattern).Value));
+
+        return string.Join(" ", order);
     }
 
 
