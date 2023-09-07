@@ -858,13 +858,12 @@ public class KatasOne
     {
         var characterSeparators = new char[] {'-','_'};
         
-        var toLambda = string.Join("", str
+        var toCamelCase = string.Join("", str
             .Split(characterSeparators)
             .Select((s, i) => i == 0 ? 
-                char.ToLower(s[0]) + s.Substring(1) : 
-                char.ToUpper(s[0]) + s.Substring(1)));
+                s : char.ToUpper(s[0]) + s.Substring(1)));
 
-        return toLambda;
+        return toCamelCase;
     }
     
     
