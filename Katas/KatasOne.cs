@@ -850,6 +850,23 @@ public class KatasOne
         
         return string.Join(" ", order);
     }
+    
+    // "the-stealth-warrior" gets converted to "theStealthWarrior"
+    // "The_Stealth_Warrior" gets converted to "TheStealthWarrior"
+    // "The_Stealth-Warrior" gets converted to "TheStealthWarrior"
+    public static string ToCamelCase(string str)
+    {
+        throw new NotImplementedException();
+    }
+    
+    
+    
+    
+    
+    
+    
+
+
 
 
 
