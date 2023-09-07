@@ -6,6 +6,7 @@ using System.Net.NetworkInformation;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 using System.Security.Authentication.ExtendedProtection;
+using System.Security.Cryptography.X509Certificates;
 using System.Text.RegularExpressions;
 using Katas.ExtensionMethods;
 using Microsoft.VisualBasic;
@@ -851,11 +852,11 @@ public class KatasOne
         return string.Join(" ", order);
     }
     
-    // "the-stealth-warrior" gets converted to "theStealthWarrior"
-    // "The_Stealth_Warrior" gets converted to "TheStealthWarrior"
-    // "The_Stealth-Warrior" gets converted to "TheStealthWarrior"
+    
     public static string ToCamelCase(string str)
     {
+        // alternative: return Regex.Replace(str, @"[_-](\w)", m => m.Groups[1].Value.ToUpper());
+        
         var characterSeparators = new char[] {'-','_'};
         
         var toCamelCase = string.Join("", str
