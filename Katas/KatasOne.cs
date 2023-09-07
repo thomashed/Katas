@@ -856,7 +856,15 @@ public class KatasOne
     // "The_Stealth-Warrior" gets converted to "TheStealthWarrior"
     public static string ToCamelCase(string str)
     {
-        throw new NotImplementedException();
+        var characterSeparators = new char[] {'-','_'};
+        
+        var toLambda = string.Join("", str
+            .Split(characterSeparators)
+            .Select((s, i) => i == 0 ? 
+                char.ToLower(s[0]) + s.Substring(1) : 
+                char.ToUpper(s[0]) + s.Substring(1)));
+
+        return toLambda;
     }
     
     

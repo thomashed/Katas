@@ -32,7 +32,7 @@ var arg2 = "Welcome";
 var arg3 = new[] {1,2,3,4,5};
 var arg4 = 942;
 
-var test = KatasOne.Order("is2 Thi1s T4est 3a");
+var test = KatasOne.ToCamelCase("The_Stealth-Warrior");
 
 Console.WriteLine("Program Expects: " + "Thi1s is2 3a T4est");
 Console.WriteLine("Program got: " + test);
